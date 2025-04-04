@@ -1,0 +1,597 @@
+2025-04-04T23:51:11.197+02:00  INFO 15824 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : Starting WheelsShopApplication using Java 17.0.14 with PID 15824 (D:\Documents\WheelsShop\target\classes started by Admin in D:\Documents\WheelsShop)
+2025-04-04T23:51:11.200+02:00  INFO 15824 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-04T23:51:11.237+02:00  INFO 15824 --- [WheelsShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-04T23:51:11.237+02:00  INFO 15824 --- [WheelsShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-04T23:51:11.803+02:00  INFO 15824 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-04T23:51:11.857+02:00  INFO 15824 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 4 JPA repository interfaces.
+2025-04-04T23:51:12.447+02:00  INFO 15824 --- [WheelsShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-04T23:51:12.459+02:00  INFO 15824 --- [WheelsShop] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-04T23:51:12.460+02:00  INFO 15824 --- [WheelsShop] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-04T23:51:12.505+02:00  INFO 15824 --- [WheelsShop] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-04T23:51:12.506+02:00  INFO 15824 --- [WheelsShop] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1268 ms
+2025-04-04T23:51:12.664+02:00  INFO 15824 --- [WheelsShop] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-04T23:51:12.734+02:00  INFO 15824 --- [WheelsShop] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-04T23:51:12.769+02:00  INFO 15824 --- [WheelsShop] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-04T23:51:13.019+02:00  INFO 15824 --- [WheelsShop] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-04T23:51:13.055+02:00  INFO 15824 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-04T23:51:13.197+02:00  INFO 15824 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4d68698f
+2025-04-04T23:51:13.200+02:00  INFO 15824 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-04T23:51:13.287+02:00  INFO 15824 --- [WheelsShop] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-04T23:51:13.448+02:00  WARN 15824 --- [WheelsShop] [restartedMain] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2025-04-04T23:51:13.455+02:00  WARN 15824 --- [WheelsShop] [restartedMain] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2025-04-04T23:51:13.459+02:00  WARN 15824 --- [WheelsShop] [restartedMain] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2025-04-04T23:51:14.188+02:00  INFO 15824 --- [WheelsShop] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-04T23:51:14.433+02:00  INFO 15824 --- [WheelsShop] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-04T23:51:14.841+02:00  WARN 15824 --- [WheelsShop] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-04T23:51:15.231+02:00  INFO 15824 --- [WheelsShop] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-04T23:51:15.262+02:00  INFO 15824 --- [WheelsShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-04T23:51:15.269+02:00  INFO 15824 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : Started WheelsShopApplication in 4.536 seconds (process running for 5.086)
+2025-04-04T23:51:22.974+02:00  INFO 15824 --- [WheelsShop] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-04T23:51:23.019+02:00  INFO 15824 --- [WheelsShop] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-04T23:51:23.022+02:00  INFO 15824 --- [WheelsShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-04T23:51:23.024+02:00  INFO 15824 --- [WheelsShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-04T23:51:23.026+02:00  INFO 15824 --- [WheelsShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-04T23:51:31.969+02:00  INFO 4196 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : Starting WheelsShopApplication using Java 17.0.14 with PID 4196 (D:\Documents\WheelsShop\target\classes started by Admin in D:\Documents\WheelsShop)
+2025-04-04T23:51:31.972+02:00  INFO 4196 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-04T23:51:32.017+02:00  INFO 4196 --- [WheelsShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-04T23:51:32.017+02:00  INFO 4196 --- [WheelsShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-04T23:51:32.589+02:00  INFO 4196 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-04T23:51:32.638+02:00  INFO 4196 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 4 JPA repository interfaces.
+2025-04-04T23:51:33.254+02:00  INFO 4196 --- [WheelsShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-04T23:51:33.266+02:00  INFO 4196 --- [WheelsShop] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-04T23:51:33.266+02:00  INFO 4196 --- [WheelsShop] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-04T23:51:33.306+02:00  INFO 4196 --- [WheelsShop] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-04T23:51:33.306+02:00  INFO 4196 --- [WheelsShop] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1289 ms
+2025-04-04T23:51:33.466+02:00  INFO 4196 --- [WheelsShop] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-04T23:51:33.514+02:00  INFO 4196 --- [WheelsShop] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-04T23:51:33.543+02:00  INFO 4196 --- [WheelsShop] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-04T23:51:33.766+02:00  INFO 4196 --- [WheelsShop] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-04T23:51:33.787+02:00  INFO 4196 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-04T23:51:33.939+02:00  INFO 4196 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6c07260e
+2025-04-04T23:51:33.942+02:00  INFO 4196 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-04T23:51:34.008+02:00  INFO 4196 --- [WheelsShop] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-04T23:51:34.143+02:00  WARN 4196 --- [WheelsShop] [restartedMain] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2025-04-04T23:51:34.152+02:00  WARN 4196 --- [WheelsShop] [restartedMain] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2025-04-04T23:51:34.156+02:00  WARN 4196 --- [WheelsShop] [restartedMain] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2025-04-04T23:51:34.840+02:00  INFO 4196 --- [WheelsShop] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-04T23:51:35.140+02:00  INFO 4196 --- [WheelsShop] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-04T23:51:35.526+02:00  WARN 4196 --- [WheelsShop] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-04T23:51:35.925+02:00  INFO 4196 --- [WheelsShop] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-04T23:51:35.955+02:00  INFO 4196 --- [WheelsShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-04T23:51:35.962+02:00  INFO 4196 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : Started WheelsShopApplication in 4.388 seconds (process running for 4.882)
+2025-04-04T23:51:49.574+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-04T23:51:49.574+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-04T23:51:49.576+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-04T23:51:49.623+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : AbstractController.findAll() starts execution
+2025-04-04T23:51:49.624+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : AbstractService.findAll() starts execution
+2025-04-04T23:51:49.627+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : ListCrudRepository.findAll() starts execution
+2025-04-04T23:51:49.809+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : ListCrudRepository.findAll() returns [org.wheelsshop.entities.Order@56286900, org.wheelsshop.entities.Order@7d07acf7]
+2025-04-04T23:51:49.809+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 181 ms
+2025-04-04T23:51:49.809+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : ListCrudRepository.findAll() ends execution
+2025-04-04T23:51:49.809+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : AbstractService.findAll() returns [org.wheelsshop.entities.Order@56286900, org.wheelsshop.entities.Order@7d07acf7]
+2025-04-04T23:51:49.809+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 185 ms
+2025-04-04T23:51:49.809+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : AbstractService.findAll() ends execution
+2025-04-04T23:51:49.809+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : AbstractController.findAll() returns [org.wheelsshop.entities.Order@56286900, org.wheelsshop.entities.Order@7d07acf7]
+2025-04-04T23:51:49.809+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 185 ms
+2025-04-04T23:51:49.809+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : AbstractController.findAll() ends execution
+2025-04-04T23:51:57.432+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-2] org.wheelsshop.aspects.LoggerAspect      : AbstractController.findById(..) starts execution
+2025-04-04T23:51:57.433+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-2] org.wheelsshop.aspects.LoggerAspect      : AbstractService.findById(..) starts execution
+2025-04-04T23:51:57.434+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-2] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-04-04T23:51:57.444+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-2] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.Order@7bbefd49]
+2025-04-04T23:51:57.445+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-2] org.wheelsshop.aspects.LoggerAspect      : duration: 10 ms
+2025-04-04T23:51:57.445+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-2] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-04-04T23:51:57.446+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-2] org.wheelsshop.aspects.LoggerAspect      : AbstractService.findById(..) returns org.wheelsshop.entities.Order@7bbefd49
+2025-04-04T23:51:57.446+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-2] org.wheelsshop.aspects.LoggerAspect      : duration: 12 ms
+2025-04-04T23:51:57.446+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-2] org.wheelsshop.aspects.LoggerAspect      : AbstractService.findById(..) ends execution
+2025-04-04T23:51:57.446+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-2] org.wheelsshop.aspects.LoggerAspect      : AbstractController.findById(..) returns org.wheelsshop.entities.Order@7bbefd49
+2025-04-04T23:51:57.446+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-2] org.wheelsshop.aspects.LoggerAspect      : duration: 13 ms
+2025-04-04T23:51:57.447+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-2] org.wheelsshop.aspects.LoggerAspect      : AbstractController.findById(..) ends execution
+2025-04-04T23:53:46.191+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-5] org.wheelsshop.aspects.LoggerAspect      : AbstractController.save(..) starts execution
+2025-04-04T23:53:46.191+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-5] org.wheelsshop.aspects.LoggerAspect      : AbstractService.save(..) starts execution
+2025-04-04T23:53:46.194+02:00  INFO 4196 --- [WheelsShop] [http-nio-8080-exec-5] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) starts execution
+2025-04-04T23:53:46.228+02:00  WARN 4196 --- [WheelsShop] [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-04-04T23:53:46.228+02:00 ERROR 4196 --- [WheelsShop] [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : ПОМИЛКА: повторювані значення ключа порушують обмеження унікальності "ukmjkwnfpsnnsfv68djiltt7bn7"
+  Detail: Ключ (car_id)=(3) вже існує.
+2025-04-04T23:53:46.237+02:00 ERROR 4196 --- [WheelsShop] [http-nio-8080-exec-5] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) exception: could not execute statement [ПОМИЛКА: повторювані значення ключа порушують обмеження унікальності "ukmjkwnfpsnnsfv68djiltt7bn7"
+  Detail: Ключ (car_id)=(3) вже існує.] [insert into orders (amount,car_id,count,created_at,status,user_id,id) values (?,?,?,?,?,?,?)]; SQL [insert into orders (amount,car_id,count,created_at,status,user_id,id) values (?,?,?,?,?,?,?)]; constraint [null]
+2025-04-04T23:53:46.237+02:00 ERROR 4196 --- [WheelsShop] [http-nio-8080-exec-5] org.wheelsshop.aspects.LoggerAspect      : AbstractService.save(..) exception: could not execute statement [ПОМИЛКА: повторювані значення ключа порушують обмеження унікальності "ukmjkwnfpsnnsfv68djiltt7bn7"
+  Detail: Ключ (car_id)=(3) вже існує.] [insert into orders (amount,car_id,count,created_at,status,user_id,id) values (?,?,?,?,?,?,?)]; SQL [insert into orders (amount,car_id,count,created_at,status,user_id,id) values (?,?,?,?,?,?,?)]; constraint [null]
+2025-04-04T23:53:46.237+02:00 ERROR 4196 --- [WheelsShop] [http-nio-8080-exec-5] org.wheelsshop.aspects.LoggerAspect      : AbstractController.save(..) exception: could not execute statement [ПОМИЛКА: повторювані значення ключа порушують обмеження унікальності "ukmjkwnfpsnnsfv68djiltt7bn7"
+  Detail: Ключ (car_id)=(3) вже існує.] [insert into orders (amount,car_id,count,created_at,status,user_id,id) values (?,?,?,?,?,?,?)]; SQL [insert into orders (amount,car_id,count,created_at,status,user_id,id) values (?,?,?,?,?,?,?)]; constraint [null]
+2025-04-04T23:53:46.240+02:00 ERROR 4196 --- [WheelsShop] [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [ПОМИЛКА: повторювані значення ключа порушують обмеження унікальності "ukmjkwnfpsnnsfv68djiltt7bn7"
+  Detail: Ключ (car_id)=(3) вже існує.] [insert into orders (amount,car_id,count,created_at,status,user_id,id) values (?,?,?,?,?,?,?)]; SQL [insert into orders (amount,car_id,count,created_at,status,user_id,id) values (?,?,?,?,?,?,?)]; constraint [null]] with root cause
+
+org.postgresql.util.PSQLException: ПОМИЛКА: повторювані значення ключа порушують обмеження унікальності "ukmjkwnfpsnnsfv68djiltt7bn7"
+  Detail: Ключ (car_id)=(3) вже існує.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.5.jar:42.7.5]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:134) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:55) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:194) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:132) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:104) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:110) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:644) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:511) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:414) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:41) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1429) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:491) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2354) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1978) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:795) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:758) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:698) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:416) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.4.4.jar:3.4.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.2.5.jar:6.2.5]
+	at jdk.proxy4/jdk.proxy4.$Proxy136.save(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.wheelsshop.aspects.LoggerAspect.log(LoggerAspect.java:25) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.2.5.jar:6.2.5]
+	at jdk.proxy4/jdk.proxy4.$Proxy136.save(Unknown Source) ~[na:na]
+	at org.wheelsshop.services.AbstractService.save(AbstractService.java:17) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.wheelsshop.aspects.LoggerAspect.log(LoggerAspect.java:25) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.wheelsshop.services.OrderService$$SpringCGLIB$$0.save(<generated>) ~[classes/:na]
+	at org.wheelsshop.controllers.AbstractController.save(AbstractController.java:18) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.wheelsshop.aspects.LoggerAspect.log(LoggerAspect.java:25) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.wheelsshop.controllers.OrderController$$SpringCGLIB$$0.save(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-04-04T23:56:14.314+02:00  INFO 4196 --- [WheelsShop] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-04T23:56:14.365+02:00  INFO 4196 --- [WheelsShop] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-04T23:56:14.370+02:00  INFO 4196 --- [WheelsShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-04T23:56:14.373+02:00  INFO 4196 --- [WheelsShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-04T23:56:14.377+02:00  INFO 4196 --- [WheelsShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-04T23:56:17.872+02:00  INFO 23464 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : Starting WheelsShopApplication using Java 17.0.14 with PID 23464 (D:\Documents\WheelsShop\target\classes started by Admin in D:\Documents\WheelsShop)
+2025-04-04T23:56:17.874+02:00  INFO 23464 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-04T23:56:17.907+02:00  INFO 23464 --- [WheelsShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-04T23:56:17.907+02:00  INFO 23464 --- [WheelsShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-04T23:56:18.402+02:00  INFO 23464 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-04T23:56:18.453+02:00  INFO 23464 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 4 JPA repository interfaces.
+2025-04-04T23:56:19.002+02:00  INFO 23464 --- [WheelsShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-04T23:56:19.013+02:00  INFO 23464 --- [WheelsShop] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-04T23:56:19.014+02:00  INFO 23464 --- [WheelsShop] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-04T23:56:19.054+02:00  INFO 23464 --- [WheelsShop] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-04T23:56:19.054+02:00  INFO 23464 --- [WheelsShop] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1146 ms
+2025-04-04T23:56:19.202+02:00  INFO 23464 --- [WheelsShop] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-04T23:56:19.271+02:00  INFO 23464 --- [WheelsShop] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-04T23:56:19.298+02:00  INFO 23464 --- [WheelsShop] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-04T23:56:19.515+02:00  INFO 23464 --- [WheelsShop] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-04T23:56:19.539+02:00  INFO 23464 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-04T23:56:19.674+02:00  INFO 23464 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2b72ecc6
+2025-04-04T23:56:19.676+02:00  INFO 23464 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-04T23:56:19.756+02:00  INFO 23464 --- [WheelsShop] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-04T23:56:19.903+02:00  WARN 23464 --- [WheelsShop] [restartedMain] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2025-04-04T23:56:19.913+02:00  WARN 23464 --- [WheelsShop] [restartedMain] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2025-04-04T23:56:19.917+02:00  WARN 23464 --- [WheelsShop] [restartedMain] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2025-04-04T23:56:20.609+02:00  INFO 23464 --- [WheelsShop] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-04T23:56:20.852+02:00  INFO 23464 --- [WheelsShop] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-04T23:56:21.237+02:00  WARN 23464 --- [WheelsShop] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-04T23:56:21.618+02:00  INFO 23464 --- [WheelsShop] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-04T23:56:21.651+02:00  INFO 23464 --- [WheelsShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-04T23:56:21.659+02:00  INFO 23464 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : Started WheelsShopApplication in 4.143 seconds (process running for 4.648)
+2025-04-04T23:56:26.128+02:00  INFO 23464 --- [WheelsShop] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-04T23:56:26.128+02:00  INFO 23464 --- [WheelsShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-04T23:56:26.129+02:00  INFO 23464 --- [WheelsShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-04T23:56:26.229+02:00  INFO 23464 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : AbstractController.save(..) starts execution
+2025-04-04T23:56:26.229+02:00  INFO 23464 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : AbstractService.save(..) starts execution
+2025-04-04T23:56:26.231+02:00  INFO 23464 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) starts execution
+2025-04-04T23:56:26.269+02:00  WARN 23464 --- [WheelsShop] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-04-04T23:56:26.270+02:00 ERROR 23464 --- [WheelsShop] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : ПОМИЛКА: повторювані значення ключа порушують обмеження унікальності "ukmjkwnfpsnnsfv68djiltt7bn7"
+  Detail: Ключ (car_id)=(3) вже існує.
+2025-04-04T23:56:26.276+02:00 ERROR 23464 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) exception: could not execute statement [ПОМИЛКА: повторювані значення ключа порушують обмеження унікальності "ukmjkwnfpsnnsfv68djiltt7bn7"
+  Detail: Ключ (car_id)=(3) вже існує.] [insert into orders (amount,car_id,count,created_at,status,user_id,id) values (?,?,?,?,?,?,?)]; SQL [insert into orders (amount,car_id,count,created_at,status,user_id,id) values (?,?,?,?,?,?,?)]; constraint [null]
+2025-04-04T23:56:26.276+02:00 ERROR 23464 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : AbstractService.save(..) exception: could not execute statement [ПОМИЛКА: повторювані значення ключа порушують обмеження унікальності "ukmjkwnfpsnnsfv68djiltt7bn7"
+  Detail: Ключ (car_id)=(3) вже існує.] [insert into orders (amount,car_id,count,created_at,status,user_id,id) values (?,?,?,?,?,?,?)]; SQL [insert into orders (amount,car_id,count,created_at,status,user_id,id) values (?,?,?,?,?,?,?)]; constraint [null]
+2025-04-04T23:56:26.276+02:00 ERROR 23464 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : AbstractController.save(..) exception: could not execute statement [ПОМИЛКА: повторювані значення ключа порушують обмеження унікальності "ukmjkwnfpsnnsfv68djiltt7bn7"
+  Detail: Ключ (car_id)=(3) вже існує.] [insert into orders (amount,car_id,count,created_at,status,user_id,id) values (?,?,?,?,?,?,?)]; SQL [insert into orders (amount,car_id,count,created_at,status,user_id,id) values (?,?,?,?,?,?,?)]; constraint [null]
+2025-04-04T23:56:26.280+02:00 ERROR 23464 --- [WheelsShop] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [ПОМИЛКА: повторювані значення ключа порушують обмеження унікальності "ukmjkwnfpsnnsfv68djiltt7bn7"
+  Detail: Ключ (car_id)=(3) вже існує.] [insert into orders (amount,car_id,count,created_at,status,user_id,id) values (?,?,?,?,?,?,?)]; SQL [insert into orders (amount,car_id,count,created_at,status,user_id,id) values (?,?,?,?,?,?,?)]; constraint [null]] with root cause
+
+org.postgresql.util.PSQLException: ПОМИЛКА: повторювані значення ключа порушують обмеження унікальності "ukmjkwnfpsnnsfv68djiltt7bn7"
+  Detail: Ключ (car_id)=(3) вже існує.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194) ~[postgresql-42.7.5.jar:42.7.5]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:155) ~[postgresql-42.7.5.jar:42.7.5]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:134) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:55) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:194) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:132) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:104) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:110) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:644) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:511) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:414) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:41) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1429) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:491) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2354) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1978) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-6.6.11.Final.jar:6.6.11.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:795) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:758) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:698) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:416) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.4.4.jar:3.4.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.2.5.jar:6.2.5]
+	at jdk.proxy4/jdk.proxy4.$Proxy135.save(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.wheelsshop.aspects.LoggerAspect.log(LoggerAspect.java:25) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.2.5.jar:6.2.5]
+	at jdk.proxy4/jdk.proxy4.$Proxy135.save(Unknown Source) ~[na:na]
+	at org.wheelsshop.services.AbstractService.save(AbstractService.java:17) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.wheelsshop.aspects.LoggerAspect.log(LoggerAspect.java:25) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.wheelsshop.services.OrderService$$SpringCGLIB$$0.save(<generated>) ~[classes/:na]
+	at org.wheelsshop.controllers.AbstractController.save(AbstractController.java:18) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.wheelsshop.aspects.LoggerAspect.log(LoggerAspect.java:25) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727) ~[spring-aop-6.2.5.jar:6.2.5]
+	at org.wheelsshop.controllers.OrderController$$SpringCGLIB$$0.save(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:6.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-04-04T23:57:15.412+02:00  INFO 23464 --- [WheelsShop] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-04T23:57:15.521+02:00  INFO 23464 --- [WheelsShop] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-04T23:57:15.529+02:00  INFO 23464 --- [WheelsShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-04T23:57:15.536+02:00  INFO 23464 --- [WheelsShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-04T23:57:15.543+02:00  INFO 23464 --- [WheelsShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-04T23:57:19.435+02:00  INFO 9240 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : Starting WheelsShopApplication using Java 17.0.14 with PID 9240 (D:\Documents\WheelsShop\target\classes started by Admin in D:\Documents\WheelsShop)
+2025-04-04T23:57:19.437+02:00  INFO 9240 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-04-04T23:57:19.479+02:00  INFO 9240 --- [WheelsShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-04T23:57:19.479+02:00  INFO 9240 --- [WheelsShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-04T23:57:20.085+02:00  INFO 9240 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-04T23:57:20.138+02:00  INFO 9240 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+2025-04-04T23:57:20.707+02:00  INFO 9240 --- [WheelsShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-04T23:57:20.718+02:00  INFO 9240 --- [WheelsShop] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-04T23:57:20.718+02:00  INFO 9240 --- [WheelsShop] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-04T23:57:20.750+02:00  INFO 9240 --- [WheelsShop] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-04T23:57:20.751+02:00  INFO 9240 --- [WheelsShop] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1271 ms
+2025-04-04T23:57:20.874+02:00  INFO 9240 --- [WheelsShop] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-04T23:57:20.901+02:00  INFO 9240 --- [WheelsShop] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-04T23:57:20.929+02:00  INFO 9240 --- [WheelsShop] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-04T23:57:21.117+02:00  INFO 9240 --- [WheelsShop] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-04T23:57:21.136+02:00  INFO 9240 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-04T23:57:21.261+02:00  INFO 9240 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7b5ee31c
+2025-04-04T23:57:21.262+02:00  INFO 9240 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-04T23:57:21.311+02:00  INFO 9240 --- [WheelsShop] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-04T23:57:21.453+02:00  WARN 9240 --- [WheelsShop] [restartedMain] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2025-04-04T23:57:21.460+02:00  WARN 9240 --- [WheelsShop] [restartedMain] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2025-04-04T23:57:21.463+02:00  WARN 9240 --- [WheelsShop] [restartedMain] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2025-04-04T23:57:22.063+02:00  INFO 9240 --- [WheelsShop] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-04T23:57:22.326+02:00  INFO 9240 --- [WheelsShop] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-04T23:57:22.802+02:00  WARN 9240 --- [WheelsShop] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-04T23:57:23.202+02:00  INFO 9240 --- [WheelsShop] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-04T23:57:23.233+02:00  INFO 9240 --- [WheelsShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-04T23:57:23.240+02:00  INFO 9240 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : Started WheelsShopApplication in 4.215 seconds (process running for 4.687)
+2025-04-04T23:57:26.150+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-04T23:57:26.150+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-04T23:57:26.151+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-04-04T23:57:26.263+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : AbstractController.save(..) starts execution
+2025-04-04T23:57:26.263+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : AbstractService.save(..) starts execution
+2025-04-04T23:57:26.265+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) starts execution
+2025-04-04T23:57:26.312+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) returns org.wheelsshop.entities.Order@50f3de5b
+2025-04-04T23:57:26.312+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 46 ms
+2025-04-04T23:57:26.312+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) ends execution
+2025-04-04T23:57:26.312+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : AbstractService.save(..) returns null
+2025-04-04T23:57:26.312+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 49 ms
+2025-04-04T23:57:26.313+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : AbstractService.save(..) ends execution
+2025-04-04T23:57:26.313+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : AbstractController.save(..) returns null
+2025-04-04T23:57:26.313+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 50 ms
+2025-04-04T23:57:26.313+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : AbstractController.save(..) ends execution
+2025-04-04T23:57:33.794+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : AbstractController.findAll() starts execution
+2025-04-04T23:57:33.794+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : AbstractService.findAll() starts execution
+2025-04-04T23:57:33.795+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : ListCrudRepository.findAll() starts execution
+2025-04-04T23:57:34.035+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : ListCrudRepository.findAll() returns [org.wheelsshop.entities.Order@2f2e5a27, org.wheelsshop.entities.Order@6ac41dc4, org.wheelsshop.entities.Order@472f75b0]
+2025-04-04T23:57:34.035+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : duration: 239 ms
+2025-04-04T23:57:34.036+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : ListCrudRepository.findAll() ends execution
+2025-04-04T23:57:34.036+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : AbstractService.findAll() returns [org.wheelsshop.entities.Order@2f2e5a27, org.wheelsshop.entities.Order@6ac41dc4, org.wheelsshop.entities.Order@472f75b0]
+2025-04-04T23:57:34.036+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : duration: 240 ms
+2025-04-04T23:57:34.036+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : AbstractService.findAll() ends execution
+2025-04-04T23:57:34.037+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : AbstractController.findAll() returns [org.wheelsshop.entities.Order@2f2e5a27, org.wheelsshop.entities.Order@6ac41dc4, org.wheelsshop.entities.Order@472f75b0]
+2025-04-04T23:57:34.037+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : duration: 242 ms
+2025-04-04T23:57:34.037+02:00  INFO 9240 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : AbstractController.findAll() ends execution
+2025-04-04T23:57:46.687+02:00  INFO 9240 --- [WheelsShop] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-04T23:57:46.735+02:00  INFO 9240 --- [WheelsShop] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-04T23:57:46.738+02:00  INFO 9240 --- [WheelsShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-04T23:57:46.740+02:00  INFO 9240 --- [WheelsShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-04T23:57:46.743+02:00  INFO 9240 --- [WheelsShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
