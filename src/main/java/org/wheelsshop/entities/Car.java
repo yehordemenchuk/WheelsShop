@@ -29,6 +29,7 @@ public class Car {
     @NonNull
     private BigDecimal price;
 
+    @NonNull
     @ElementCollection
     private List<String> carImages = new ArrayList<>();
 
