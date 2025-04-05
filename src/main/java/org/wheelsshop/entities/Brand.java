@@ -24,7 +24,8 @@ public class Brand {
     @NonNull
     private String emblem;
 
-    @OneToMany(mappedBy = "brand", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "brand", cascade = CascadeType.ALL,
+            fetch = FetchType.LAZY, orphanRemoval = true)
     @JsonManagedReference("car-brand-reference")
     private List<Car> relatedCars;
 }
