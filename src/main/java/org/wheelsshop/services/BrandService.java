@@ -3,7 +3,7 @@ package org.wheelsshop.services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.wheelsshop.entities.Brand;
-import org.wheelsshop.repository.BrandJpaRepository;
+import org.wheelsshop.repository.jpa.BrandJpaRepository;
 
 @Service
 public class BrandService extends AbstractService<Brand> {
