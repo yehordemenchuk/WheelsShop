@@ -12,6 +12,8 @@ public abstract class AbstractController<T> implements Controller<T> {
         this.service = service;
     }
 
+
+
     @PostMapping("/save")
     @Override
     public void save(@RequestBody T t) {

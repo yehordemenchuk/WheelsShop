@@ -29,11 +29,13 @@ public abstract class AbstractRedisRepository<T> implements RedisRepository<T> {
     public T getById(long id) throws IllegalStateException {
         Object obj = redisTemplate.opsForValue().get(prefix + id);
 
-        if (clazz.isInstance(obj)) {
+        if (clazz != null && clazz.isInstance(obj)) {
             return clazz.cast(obj);
-        } else {
+        } else if (clazz != null) {
             throw new IllegalStateException();
         }
+
+        return null;
     }
 
     @Override
