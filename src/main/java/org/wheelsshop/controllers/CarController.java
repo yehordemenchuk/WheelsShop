@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.*;
 import org.wheelsshop.entities.Car;
 import org.wheelsshop.services.CarService;
 
+import java.lang.reflect.InvocationTargetException;
+
 @RestController
 @RequestMapping("/api/v1/car")
 public class CarController extends AbstractController<Car> {
@@ -17,7 +19,9 @@ public class CarController extends AbstractController<Car> {
 
     @Override
     @PreAuthorize("hasRole('ADMIN')")
-    public void save(@RequestBody Car car) {
+    public void save(@RequestBody Car car) throws InvocationTargetException, NoSuchMethodException,
+            IllegalAccessException {
+
         super.save(car);
     }
 

@@ -3,6 +3,7 @@ package org.wheelsshop.controllers;
 import org.springframework.web.bind.annotation.*;
 import org.wheelsshop.services.ServiceContract;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
 public abstract class AbstractController<T> implements Controller<T> {
@@ -16,7 +17,8 @@ public abstract class AbstractController<T> implements Controller<T> {
 
     @PostMapping("/save")
     @Override
-    public void save(@RequestBody T t) {
+    public void save(@RequestBody T t) throws InvocationTargetException,
+            NoSuchMethodException, IllegalAccessException {
         service.save(t);
     }
 
@@ -28,7 +30,9 @@ public abstract class AbstractController<T> implements Controller<T> {
 
     @GetMapping("/{id}")
     @Override
-    public T findById(@PathVariable long id) {
+    public T findById(@PathVariable long id) throws InvocationTargetException, NoSuchMethodException,
+            IllegalAccessException {
+
         return service.findById(id);
     }
 
