@@ -28,7 +28,7 @@ public abstract class AbstractController<T> implements Controller<T> {
         return service.findAll();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/find/{id}")
     @Override
     public T findById(@PathVariable long id) throws InvocationTargetException, NoSuchMethodException,
             IllegalAccessException {

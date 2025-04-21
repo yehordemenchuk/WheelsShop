@@ -24,20 +24,28 @@ public class SecurityConfig {
     @Bean
     public UserDetailsService userDetailsService(PasswordEncoder encoder, UserService userService) {
         UserDetails admin = User.builder().username("admin").password(encoder.encode("admin")).roles("ADMIN").build();
-        UserDetails user = User.builder().username("user").password(encoder.encode("user")).roles("CLIENT").build();
+        UserDetails user = User.builder().username("user").password(encoder.encode("user")).roles("CUSTOMER").build();
 
         return new InMemoryUserDetailsManager(admin, user);
     }
 
     @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http, DefaultAuthenticationEventPublisher authenticationEventPublisher) throws Exception
-        /* потом допишешь исключение */ {
+    public SecurityFilterChain securityFilterChain(HttpSecurity http, DefaultAuthenticationEventPublisher authenticationEventPublisher) throws Exception {
             return http.csrf(AbstractHttpConfigurer::disable)
                     .authorizeHttpRequests(auth -> auth
-                            .requestMatchers("/api/v1/user/**").permitAll()
+                            .requestMatchers("/api/v1/user/save").authenticated()
+                            .requestMatchers("/api/v1/order/save").authenticated()
+                            .requestMatchers("/api/v1/order/find/**").authenticated()
+                            .requestMatchers("/api/v1/order/delete/**").authenticated()
+                            .requestMatchers("/api/v1/car/save").hasRole("ADMIN")
+                            .requestMatchers("/api/v1/brand/save").hasRole("ADMIN")
+                            .requestMatchers("/api/v1/**/delete/**").hasRole("ADMIN")
+                            .requestMatchers("/api/v1/user/all").hasRole("ADMIN")
+                            .requestMatchers("/api/v1/order/all").hasRole("ADMIN")
+                            .requestMatchers("/api/v1/user/find/**").hasRole("ADMIN")
                             .requestMatchers("/api/v1/cars/**").permitAll()
                             .requestMatchers("/api/v1/brands/**").permitAll()
-                            .requestMatchers("/api/v1/**").authenticated())
+                            .requestMatchers("/api/v1/order/**").authenticated())
                             .formLogin(AbstractAuthenticationFilterConfigurer::permitAll)
                     .build();
     }
