@@ -1,58 +1,59 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xml:base="https://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D&M-main</title>
-    <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" th:href="@{/css/main.css}">
 </head>
 <body>
-// основа
+
+<!-- основа -->
 <div class="best_car">
-    <header class="header-main ">
+    <header class="header-main">
         <div class="container">
-            <img src="/Images/Vector.png" alt="" class="logo">
+            <img th:src="@{/images/Vector.png}" alt="Logo" class="logo">
 
             <ul class="active">
-                <li><a class="underline" href="/Images/cars.html">NEW CARS</a></li>
+                <li><a class="underline" th:href="@{/cars}">NEW CARS</a></li>
                 <li><a class="underline" href="#">PRE-OWNED CARS</a></li>
                 <li><a class="underline" href="#">FINANCE</a></li>
                 <li><a class="underline" href="#">LEASE VS BUY</a></li>
                 <li><a class="underline" href="#">CONTACT US</a></li>
-            </ul>s
+            </ul>
         </div>
     </header>
-    <main class="main>">
+
+    <main class="main">
         <div class="face">
             <h1 class="Lease_title">Leasing From D&M</h1>
-            <li><a class="btn " href="cars.html">FIND A CAR</a></li>
+            <li><a class="btn" th:href="@{/cars}">FIND A CAR</a></li>
         </div>
-        </main>
+    </main>
 </div>
-</main>
 
 <section class="section-1">
     <h1 class="ask">Why Lease with D&M?</h1>
     <div class="primes">
         <div class="s1">
-            <img src="/Images/s1.png" alt="" class="logo-3">
+            <img th:src="@{/images/s1.png}" alt="Top Dealers" class="logo-3">
             <h1 class="mini-title">Top Dealers</h1>
             <p class="mini-text">TrueCar Certified Dealers compete for your business by providing discounted pricing on in-stock inventory.</p>
         </div>
         <div class="s2">
-            <img src="/Images/s2.png" alt="" class="logo-3">
+            <img th:src="@{/images/s2.png}" alt="Discounted Pricing" class="logo-3">
             <h1 class="mini-title-2">Discounted Pricing</h1>
             <p class="mini-text">View local inventory from the comfort of home and get access to guaranteed savings on the car of your choice.</p>
         </div>
         <div class="s3">
-            <img src="/Images/s3.png" alt="" class="logo-4">
+            <img th:src="@{/images/s3.png}" alt="Lower Payments" class="logo-4">
             <h1 class="mini-title-2">Lower Payments</h1>
             <p class="mini-text">Get discounted pricing when you shop for a car or truck using TrueCar and save on your lease payment.</p>
         </div>
         <div class="s4">
-            <img src="/Images/s4.png" alt="" class="logo-3">
+            <img th:src="@{/images/s4.png}" alt="Easy Upgrade" class="logo-3">
             <h1 class="mini-title">Easy Upgrade</h1>
-            <p class="mini-text">Easy to upgrade to the newest vehicle model every few years if you would like to be modern and comfortable</p>
+            <p class="mini-text">Easy to upgrade to the newest vehicle model every few years if you would like to be modern and comfortable.</p>
         </div>
     </div>
 </section>
@@ -60,24 +61,26 @@
 <section class="section-2">
     <div class="title-2">
         <h1 class="mini-title-3">How Does Leasing Work?</h1>
-        <h1 class="text-2">Leasing a vehicle is essentially entering into a long term rental agreement for that vehicle. Unlike a traditional car purchase, you don’t actually own the vehicle. Instead, a leasing company purchases the vehicle from the dealer on your behalf and then you make monthly payments to the leasing company for the duration of your lease. Some leases however, do provide the option to purchase the vehicle at the end of the lease.</h1>
-        <h1 class="mini-title-4">Similar to a short term car rental, there are rules that define:</h1>
+        <h1 class="text-2">Leasing a vehicle is essentially entering into a long-term rental agreement for that vehicle. Unlike a traditional car purchase, you don’t actually own the vehicle. Instead, a leasing company purchases the vehicle from the dealer on your behalf and then you make monthly payments to the leasing company for the duration of your lease. Some leases, however, do provide the option to purchase the vehicle at the end of the lease.</h1>
+        <h1 class="mini-title-4">Similar to a short-term car rental, there are rules that define:</h1>
     </div>
+
     <div class="p-2">
         <div class="digits">
-            <img src="/Images/one.png" alt="" class="digit">
+            <img th:src="@{/images/one.png}" alt="Annual Miles" class="digit">
             <h1 class="digit_text">How much you can drive, stated as annual miles (excess miles are charged at a specified rate)</h1>
         </div>
         <div class="digits-2">
-            <img src="/Images/two.png" alt="" class="digit">
+            <img th:src="@{/images/two.png}" alt="Damage Liability" class="digit">
             <h1 class="digit_text">Types of damage that you may be liable for at the end of your lease</h1>
         </div>
         <div class="digits-3">
-            <img src="/Images/three.png" alt="" class="digit">
+            <img th:src="@{/images/three.png}" alt="Return Procedures" class="digit">
             <h1 class="digit_text">The procedures and costs when you return the vehicle at the end of your lease</h1>
         </div>
     </div>
-    <h1 class=" text-3">Lease contracts are a commitment and ending them early can be difficult and expensive so it is important to consider your circumstances carefully before you decide.</h1>
+
+    <h1 class="text-3">Lease contracts are a commitment and ending them early can be difficult and expensive, so it is important to consider your circumstances carefully before you decide.</h1>
 </section>
 
 <section class="section-3">
@@ -85,7 +88,7 @@
         <h1 class="title-5">WELCOME TO D&M LEASING</h1>
         <h1 class="title-6">Find out how easy it is to lease from D&M</h1>
     </div>
-    <img src="/Images/Video-1.png" alt="" class="video">
+    <img th:src="@{/images/Video-1.png}" alt="Intro Video" class="video">
 </section>
 
 <section class="section-4">
@@ -93,21 +96,22 @@
         <h1 class="title-7">Important Things to Consider</h1>
         <p class="text-4">Depending on your circumstances and what is important to you, a lease could be a great option for your next vehicle. Below are some important factors that may influence your decision.</p>
     </div>
+
     <div class="auto_cards">
         <div class="car-1">
-            <img src="/Images/car-1.png" alt="" class="card">
+            <img th:src="@{/images/car-1.png}" alt="Lower Payments" class="card">
             <p class="card_text">Monthly payments on leases are generally 20% - 30% cheaper than loans</p>
         </div>
         <div class="car-2">
-            <img src="/Images/car-2.png" alt="" class="card">
+            <img th:src="@{/images/car-2.png}" alt="Tax Break" class="card">
             <p class="card_text">You may be eligible for a tax break if you use the leased vehicle for business purposes</p>
         </div>
         <div class="car-3">
-            <img src="/Images/car-3.png" alt="" class="card">
+            <img th:src="@{/images/car-3.png}" alt="Easy Upgrade" class="card">
             <p class="card_text">Easy to upgrade to the newest vehicle model every few years</p>
         </div>
         <div class="car-4">
-            <img src="/Images/car-4.png" alt="" class="card">
+            <img th:src="@{/images/car-4.png}" alt="Mileage Fees" class="card">
             <p class="card_text">There are often fees charged if you drive more than your lease's mileage allowance</p>
         </div>
     </div>
@@ -143,12 +147,14 @@
     </div>
 
     <div class="googles">
-        <img src="/Images/app-store-5768091a665de29ed90932b12cc1dc34 1.png" alt="" class="logo-2">
-        <img src="/Images/google-play-1b282a5faa8753db97e49dd35e98dd25 1.png" alt="" class="logo-2">
+        <img th:src="@{/images/app-store.png}" alt="App Store" class="logo-2">
+        <img th:src="@{/images/google-play.png}" alt="Google Play" class="logo-2">
     </div>
+
     <div class="googles_text">
-        <img src="/Images/text-1.png" alt="" class="footer_text-2">
+        <img th:src="@{/images/text-1.png}" alt="Footer Text" class="footer_text-2">
     </div>
+
     <div class="footer_text-3">
         <h5 class="ft"><a href="#">Terms of Service</a></h5>
         <h5 class="ft"><a href="#">Privacy Policy</a></h5>
@@ -158,3 +164,4 @@
 
 </body>
 </html>
+
