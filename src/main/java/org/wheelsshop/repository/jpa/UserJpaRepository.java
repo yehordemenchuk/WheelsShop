@@ -6,4 +6,5 @@ import org.wheelsshop.entities.User;
 
 @Repository
 public interface UserJpaRepository extends JpaRepository<User, Long> {
+    User findByEmail(String email);
 }
