@@ -16,21 +16,23 @@ import org.wheelsshop.entities.Role;
 @EnableWebSecurity
 @EnableMethodSecurity
 public class SecurityConfig {
+    private static final String ADMIN_ROLE_NAME = Role.ADMIN.name();
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http, DefaultAuthenticationEventPublisher authenticationEventPublisher) throws Exception {
             return http.authorizeHttpRequests(auth -> auth
-                            .requestMatchers("/api/v1/user/save").authenticated()
                             .requestMatchers("/api/v1/order/save").authenticated()
                             .requestMatchers("/api/v1/order/find/**").authenticated()
                             .requestMatchers("/api/v1/order/delete/**").authenticated()
-                            .requestMatchers("/api/v1/car/save").hasRole(Role.ADMIN.name())
-                            .requestMatchers("/api/v1/brand/save").hasRole(Role.ADMIN.name())
-                            .requestMatchers("/api/v1/car/delete/**").hasRole(Role.ADMIN.name())
-                            .requestMatchers("/api/v1/brand/delete/**").hasRole(Role.ADMIN.name())
-                            .requestMatchers("/api/v1/user/delete/**").hasRole(Role.ADMIN.name())
-                            .requestMatchers("/api/v1/user/all").hasRole(Role.ADMIN.name())
-                            .requestMatchers("/api/v1/order/all").hasRole(Role.ADMIN.name())
-                            .requestMatchers("/api/v1/user/find/**").hasRole(Role.ADMIN.name())
+                            .requestMatchers("/api/v1/car/save").hasRole(ADMIN_ROLE_NAME)
+                            .requestMatchers("/api/v1/brand/save").hasRole(ADMIN_ROLE_NAME)
+                            .requestMatchers("/api/v1/car/delete/**").hasRole(ADMIN_ROLE_NAME)
+                            .requestMatchers("/api/v1/brand/delete/**").hasRole(ADMIN_ROLE_NAME)
+                            .requestMatchers("/api/v1/user/delete/**").hasRole(ADMIN_ROLE_NAME)
+                            .requestMatchers("/api/v1/user/all").hasRole(ADMIN_ROLE_NAME)
+                            .requestMatchers("/api/v1/order/all").hasRole(ADMIN_ROLE_NAME)
+                            .requestMatchers("/api/v1/user/find/**").hasRole(ADMIN_ROLE_NAME)
+                            .requestMatchers("/api/v1/user/save").permitAll()
                             .requestMatchers("/api/v1/car/**").permitAll()
                             .requestMatchers("/api/v1/brand/**").permitAll()
                             .requestMatchers("/api/v1/home").permitAll()

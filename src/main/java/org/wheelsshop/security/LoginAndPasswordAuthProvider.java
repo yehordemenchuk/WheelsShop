@@ -11,6 +11,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.stereotype.Component;
 import org.wheelsshop.entities.Role;
 import org.wheelsshop.entities.User;
+import org.wheelsshop.exceptions.EntityNotFoundException;
 import org.wheelsshop.repository.jpa.UserJpaRepository;
 
 import java.util.List;
@@ -34,6 +35,10 @@ public class LoginAndPasswordAuthProvider implements AuthenticationProvider {
         String password = authentication.getCredentials().toString();
 
         User user = userJpaRepository.findByEmail(login);
+
+        if (user == null) {
+            throw new EntityNotFoundException("User not found");
+        }
 
         if (!password.equals(user.getHashPassword())) {
             throw new BadCredentialsException("Bad credentials");
