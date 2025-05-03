@@ -10,7 +10,8 @@ public interface ServiceContract<T> {
 
     List<T> findAll();
 
-    T findById(long id) throws EntityNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException;
+    T findById(long id) throws EntityNotFoundException, NoSuchMethodException,
+            InvocationTargetException, IllegalAccessException;
 
     void deleteById(long id) throws EntityNotFoundException;
 }
