@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2025-05-05T20:50:16.660+03:00  INFO 43880 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : Starting WheelsShopApplication using Java 17.0.14 with PID 43880 (D:\Disk D\WheelsShop-master\target\classes started by Админ in D:\Disk D\WheelsShop-master)
 2025-05-05T20:50:16.666+03:00  INFO 43880 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : No active profile set, falling back to 1 default profile: "default"
 2025-05-05T20:50:16.723+03:00  INFO 43880 --- [WheelsShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
@@ -28,10 +29,43 @@
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.4
+=======
+2025-05-01T22:19:26.103+02:00  INFO 20552 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : Starting WheelsShopApplication using Java 17.0.14 with PID 20552 (D:\Documents\WheelsShop\target\classes started by Admin in D:\Documents\WheelsShop)
+2025-05-01T22:19:26.107+02:00  INFO 20552 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-05-01T22:19:26.149+02:00  INFO 20552 --- [WheelsShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-01T22:19:26.150+02:00  INFO 20552 --- [WheelsShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-01T22:19:27.011+02:00  INFO 20552 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-01T22:19:27.013+02:00  INFO 20552 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01T22:19:27.194+02:00  INFO 20552 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 169 ms. Found 4 JPA repository interfaces.
+2025-05-01T22:19:27.216+02:00  INFO 20552 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-01T22:19:27.218+02:00  INFO 20552 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-01T22:19:27.239+02:00  INFO 20552 --- [WheelsShop] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.wheelsshop.repository.jpa.BrandJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-01T22:19:27.239+02:00  INFO 20552 --- [WheelsShop] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.wheelsshop.repository.jpa.CarJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-01T22:19:27.240+02:00  INFO 20552 --- [WheelsShop] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.wheelsshop.repository.jpa.OrderJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-01T22:19:27.241+02:00  INFO 20552 --- [WheelsShop] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.wheelsshop.repository.jpa.UserJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-01T22:19:27.242+02:00  INFO 20552 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2025-05-01T22:19:28.120+02:00  INFO 20552 --- [WheelsShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-01T22:19:28.138+02:00  INFO 20552 --- [WheelsShop] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-01T22:19:28.139+02:00  INFO 20552 --- [WheelsShop] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-01T22:19:28.190+02:00  INFO 20552 --- [WheelsShop] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-01T22:19:28.190+02:00  INFO 20552 --- [WheelsShop] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2040 ms
+2025-05-01T22:19:28.458+02:00  INFO 20552 --- [WheelsShop] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01T22:19:28.524+02:00  INFO 20552 --- [WheelsShop] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-01T22:19:28.559+02:00  INFO 20552 --- [WheelsShop] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-01T22:19:28.853+02:00  INFO 20552 --- [WheelsShop] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01T22:19:28.885+02:00  INFO 20552 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-01T22:19:29.074+02:00  INFO 20552 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2d1fdccc
+2025-05-01T22:19:29.076+02:00  INFO 20552 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-01T22:19:29.170+02:00  INFO 20552 --- [WheelsShop] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+>>>>>>> db340dd41ccb85f659ef8ecaeb166539fe96e8a9
 	Autocommit mode: undefined/unknown
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
+<<<<<<< HEAD
 2025-05-05T20:50:20.581+03:00  WARN 43880 --- [WheelsShop] [restartedMain] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
 2025-05-05T20:50:20.595+03:00  WARN 43880 --- [WheelsShop] [restartedMain] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
 2025-05-05T20:50:20.602+03:00  WARN 43880 --- [WheelsShop] [restartedMain] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
@@ -300,3 +334,33 @@ java.lang.IllegalArgumentException: Invalid character found in method name [0x16
 2025-05-05T21:16:27.306+03:00  INFO 16552 --- [WheelsShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-05-05T21:16:27.432+03:00  INFO 16552 --- [WheelsShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-05-05T21:16:27.477+03:00  INFO 16552 --- [WheelsShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+=======
+2025-05-01T22:19:29.367+02:00  WARN 20552 --- [WheelsShop] [restartedMain] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2025-05-01T22:19:29.377+02:00  WARN 20552 --- [WheelsShop] [restartedMain] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2025-05-01T22:19:29.380+02:00  WARN 20552 --- [WheelsShop] [restartedMain] o.h.b.i.InFlightMetadataCollectorImpl    : HHH000069: Duplicate generator name generator
+2025-05-01T22:19:30.222+02:00  INFO 20552 --- [WheelsShop] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01T22:19:30.549+02:00  INFO 20552 --- [WheelsShop] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01T22:19:31.110+02:00  INFO 20552 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : RedisConfig.redisTemplate(..) starts execution
+2025-05-01T22:19:31.169+02:00  INFO 20552 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : RedisConfig.redisTemplate(..) returns org.springframework.data.redis.core.RedisTemplate@12bc539a
+2025-05-01T22:19:31.169+02:00  INFO 20552 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 58 ms
+2025-05-01T22:19:31.170+02:00  INFO 20552 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : RedisConfig.redisTemplate(..) ends execution
+2025-05-01T22:19:31.513+02:00  WARN 20552 --- [WheelsShop] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-01T22:19:31.545+02:00  INFO 20552 --- [WheelsShop] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name loginAndPasswordAuthProvider
+2025-05-01T22:19:31.656+02:00  INFO 20552 --- [WheelsShop] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-01T22:19:31.999+02:00  INFO 20552 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.securityFilterChain(..) starts execution
+2025-05-01T22:19:32.091+02:00  INFO 20552 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.securityFilterChain(..) returns DefaultSecurityFilterChain matching [any request] and having filters [DisableEncodeUrl, WebAsyncManagerIntegration, SecurityContextHolder, HeaderWriter, Csrf, Logout, UsernamePasswordAuthentication, DefaultResources, DefaultLoginPageGenerating, DefaultLogoutPageGenerating, RequestCacheAware, SecurityContextHolderAwareRequest, AnonymousAuthentication, ExceptionTranslation, Authorization]
+2025-05-01T22:19:32.092+02:00  INFO 20552 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 91 ms
+2025-05-01T22:19:32.092+02:00  INFO 20552 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.securityFilterChain(..) ends execution
+2025-05-01T22:19:32.128+02:00  INFO 20552 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.passwordEncoder() starts execution
+2025-05-01T22:19:32.129+02:00  INFO 20552 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.passwordEncoder() returns org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder@603a8e11
+2025-05-01T22:19:32.129+02:00  INFO 20552 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 1 ms
+2025-05-01T22:19:32.129+02:00  INFO 20552 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.passwordEncoder() ends execution
+2025-05-01T22:19:32.589+02:00  INFO 20552 --- [WheelsShop] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-01T22:19:32.620+02:00  INFO 20552 --- [WheelsShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-01T22:19:32.630+02:00  INFO 20552 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : Started WheelsShopApplication in 7.059 seconds (process running for 8.646)
+2025-05-01T22:21:00.856+02:00  INFO 20552 --- [WheelsShop] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01T22:21:00.900+02:00  INFO 20552 --- [WheelsShop] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-01T22:21:00.918+02:00  INFO 20552 --- [WheelsShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01T22:21:00.921+02:00  INFO 20552 --- [WheelsShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-01T22:21:00.925+02:00  INFO 20552 --- [WheelsShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+>>>>>>> db340dd41ccb85f659ef8ecaeb166539fe96e8a9
