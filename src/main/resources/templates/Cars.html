@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&M New Cars</title>
+    <link rel="stylesheet" th:href="@{/static/main.css}">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <img th:src="@{/images/Vector.png}" alt="" class="logo">
+
+        <ul class="active">
+            <li><a class="new_car underline" href="#">NEW CARS</a></li>
+            <li><a class="underline" href="#">PRE-OWNED CARS</a></li>
+            <li><a class="underline" href="#">FINANCE</a></li>
+            <li><a class="underline" href="#">LEASE VS BUY</a></li>
+            <li><a class="underline" href="#">CONTACT US</a></li>
+        </ul>
+    </div>
+</header>
+
+<main class="main-2">
+    <h1 class="title-8">Choose your car</h1>
+    <div class="text_cars">
+        <li><a class="blue_text underline" href="#">Car and Minivan</a></li>
+        <li><a class="cars_btn-1 underline" href="#">Trucks</a></li>
+        <li><a class="cars_btn-1 underline" href="#">Crossovers & SUVs</a></li>
+        <li><a class="cars_btn-1 underline" href="#">Electrified</a></li>
+    </div>
+</main>
+
+<section class="cars_cards_1-4">
+    <!-- Блок машин - повторяется -->
+    <div class="cars_card">
+        <div>
+            <img th:src="@{/images/crown.png}" alt="">
+            <h1 class="c-title">Toyota Crown 2023</h1>
+            <p class="c-text">starting from $39900</p>
+            <h1 class="c-price">$650/mo</h1>
+        </div>
+        <div class="c-blue">
+            <li><a class="c-b" href="#">see details</a></li>
+        </div>
+    </div>
+
+    <!-- Повтори остальные машины аналогично -->
+</section>
+
+<!-- Остальные секции копируются по той же логике -->
+
+<section class="cars_cards_2-4">
+    <!-- Машины второго блока -->
+</section>
+
+<section class="cars_cards_3-4">
+    <!-- Машины третьего блока -->
+</section>
+
+<li><a class="btn-5" href="#">SHOW MORE</a></li>
+
+<section class="botom">
+    <div class="l-botom">
+        <div class="b-1">
+            <img th:src="@{/images/c-picture-1.png}" alt="">
+            <div class="b-title_more-1">
+                <h1 class="b-title">An easier way to buy your next Toyota</h1>
+                <a class="blue_more" href="#">more</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="l-botom">
+        <div class="b-1">
+            <img th:src="@{/images/c-picture-2.png}" alt="">
+            <div class="b-title_more-1">
+                <h1 class="b-title">A Guide to Road-Tripping With Pets</h1>
+                <a class="blue_more-2" href="#">more</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<li><a class="btn-5" href="#">SHOW MORE</a></li>
+
+<footer class="footer">
+    <div class="foot">
+        <div class="footer_text">
+            <ul class="footer_active">
+                <h1 class="food_title">Products</h1>
+                <li class="footer_button"><a href="#">Used</a></li>
+                <li class="footer_button"><a href="#">New</a></li>
+                <li class="footer_button"><a href="#">Sell your car</a></li>
+            </ul>
+            <ul class="footer_active-2">
+                <h2 class="food_title">Resources</h2>
+                <li class="footer_button"><a href="#">Blog</a></li>
+                <li class="footer_button"><a href="#">FAQ</a></li>
+                <li class="footer_button"><a href="#">Contact us</a></li>
+            </ul>
+            <ul class="footer_active-3">
+                <h3 class="food_title-2">Work With TrueCar</h3>
+                <li class="footer_button"><a href="#">Dealers</a></li>
+                <li class="footer_button"><a href="#">Partners</a></li>
+            </ul>
+            <ul class="footer_active-4">
+                <h4 class="food_title">About</h4>
+                <li class="footer_button"><a href="#">About us</a></li>
+                <li class="footer_button"><a href="#">Team</a></li>
+                <li class="footer_button"><a href="#">Careers</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="googles">
+        <img th:src="@{/images/app-store-5768091a665de29ed90932b12cc1dc34 1.png}" alt="" class="logo-2">
+        <img th:src="@{/images/google-play-1b282a5faa8753db97e49dd35e98dd25 1.png}" alt="" class="logo-2">
+    </div>
+
+    <div class="googles_text">
+        <img th:src="@{/images/text-1.png}" alt="" class="footer_text-2">
+    </div>
+
+    <div class="footer_text-3">
+        <h5 class="ft"><a href="#">Terms of Service</a></h5>
+        <h5 class="ft"><a href="#">Privacy Policy</a></h5>
+        <h5 class="ft"><a href="#">Do Not Sell My Personal Information</a></h5>
+    </div>
+</footer>
+
+</body>
+</html>
