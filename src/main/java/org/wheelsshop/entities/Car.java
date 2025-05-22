@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@RequiredArgsConstructor
 @NoArgsConstructor
 @Setter
 @Getter
@@ -20,20 +19,15 @@ public class Car {
     @Setter(AccessLevel.NONE)
     private Long id;
 
-    @NonNull
     private String carName;
 
-    @NonNull
     private String description;
 
-    @NonNull
     private BigDecimal price;
 
-    @NonNull
     @ElementCollection
     private List<String> carImages = new ArrayList<>();
 
-    @NonNull
     private Integer count;
 
     @ManyToOne

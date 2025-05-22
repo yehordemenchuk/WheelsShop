@@ -1,16 +1,18 @@
 package org.wheelsshop.services;
 
+import org.wheelsshop.dto.Dto;
 import org.wheelsshop.exceptions.EntityNotFoundException;
+import org.wheelsshop.request.Request;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
 public interface ServiceContract<T> {
-    void save(T t) throws InvocationTargetException, NoSuchMethodException, IllegalAccessException;
+    void save(Request<T> r) throws InvocationTargetException, NoSuchMethodException, IllegalAccessException;
 
-    List<T> findAll();
+    List<Dto<T>> findAll();
 
-    T findById(long id) throws EntityNotFoundException, NoSuchMethodException,
+    Dto<T> findById(long id) throws EntityNotFoundException, NoSuchMethodException,
             InvocationTargetException, IllegalAccessException;
 
     void deleteById(long id) throws EntityNotFoundException;

@@ -1,12 +1,13 @@
 package org.wheelsshop.mapper;
 
 import org.mapstruct.Mapper;
-import org.wheelsshop.dto.UserDTO;
+import org.wheelsshop.dto.UserDto;
 import org.wheelsshop.entities.User;
+import org.wheelsshop.request.UserRequest;
 
 @Mapper(componentModel = "spring")
-public interface UserMapper {
-    UserDTO mapToUserDTO(User user);
+public interface UserMapper extends EntityMapper<User> {
+    User fromUserRequest(UserRequest userRequest);
 
-    User mapToUser(UserDTO userDTO);
+    UserDto toDto(User user);
 }

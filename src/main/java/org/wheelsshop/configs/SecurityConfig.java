@@ -1,21 +1,20 @@
 package org.wheelsshop.configs;
 
-import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.authentication.DefaultAuthenticationEventPublisher;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.web.cors.CorsConfiguration;
-import org.springframework.web.cors.CorsConfigurationSource;
-import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.wheelsshop.entities.Role;
-
-import java.util.List;
+import org.wheelsshop.security.LoginAndPasswordFilter;
 
 @Configuration
 @EnableWebSecurity
@@ -25,11 +24,13 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http,
-                                                   DefaultAuthenticationEventPublisher authenticationEventPublisher) throws Exception {
+                                                   AuthenticationManager authenticationManager) throws Exception {
+
+        LoginAndPasswordFilter loginAndPasswordFilter = new LoginAndPasswordFilter(authenticationManager);
 
         http.csrf(AbstractHttpConfigurer::disable)
                 .sessionManagement(session ->
-                        session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                        session.sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED))
                 .authorizeHttpRequests(auth ->
                         auth.requestMatchers(
                                 "/api/v1/user/save",
@@ -55,39 +56,22 @@ public class SecurityConfig {
 
                                 .anyRequest().authenticated()
                 )
-                .httpBasic(httpBasic -> {})
-                .exceptionHandling(
-                        exception ->
-                                exception.authenticationEntryPoint(
-                                        (req,
-                                         res, ex) ->
-                                        res.sendError(HttpServletResponse.SC_UNAUTHORIZED, ex.getMessage()))
-                                        .accessDeniedHandler(
-                                                (req,
-                                                 res, ex) ->
-                                                        res.sendError(HttpServletResponse.SC_FORBIDDEN,
-                                                                ex.getMessage())
-                                        )
-                );
+                .addFilterBefore(loginAndPasswordFilter,
+                        UsernamePasswordAuthenticationFilter.class);
 
 
         return http.build();
     }
 
     @Bean
-    public CorsConfigurationSource corsConfigurationSource() {
-        CorsConfiguration corsConfiguration = new CorsConfiguration();
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration config)
+            throws Exception {
 
-        corsConfiguration.setAllowedOrigins(List.of("*"));
+        return config.getAuthenticationManager();
+    }
 
-        corsConfiguration.setAllowedHeaders(List.of("*"));
-
-        corsConfiguration.setAllowedMethods(List.of("GET", "POST", "DELETE", "OPTIONS"));
-
-        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-
-        source.registerCorsConfiguration("/**", corsConfiguration);
-
-        return source;
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
     }
 }

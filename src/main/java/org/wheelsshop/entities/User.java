@@ -7,7 +7,6 @@ import lombok.*;
 import java.util.List;
 
 @Entity
-@RequiredArgsConstructor
 @NoArgsConstructor
 @Setter
 @Getter
@@ -19,19 +18,14 @@ public class User {
     @Setter(AccessLevel.NONE)
     private Long id;
 
-    @NonNull
     private String name;
 
-    @NonNull
     private String surname;
 
-    @NonNull
     private String email;
 
-    @NonNull
     private String hashPassword;
 
-    @NonNull
     private Role role;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL,

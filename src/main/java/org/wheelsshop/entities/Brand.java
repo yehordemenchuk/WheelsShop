@@ -7,7 +7,6 @@ import lombok.*;
 import java.util.List;
 
 @Entity
-@RequiredArgsConstructor
 @NoArgsConstructor
 @Setter
 @Getter
@@ -18,10 +17,8 @@ public class Brand {
     @Setter(AccessLevel.NONE)
     private Long id;
 
-    @NonNull
     private String brandName;
 
-    @NonNull
     private String emblem;
 
     @OneToMany(mappedBy = "brand", cascade = CascadeType.ALL,

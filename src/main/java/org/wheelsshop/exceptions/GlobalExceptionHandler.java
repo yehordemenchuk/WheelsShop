@@ -16,7 +16,7 @@ public class GlobalExceptionHandler {
         return new ErrorDetails(LocalDateTime.now(),
                 e.getMessage(),
                 webRequest.getDescription(false),
-                httpStatus.toString());
+                httpStatus.name());
     }
 
     private ResponseEntity<ErrorDetails> handleException(Exception e, WebRequest webRequest, HttpStatus status) {
