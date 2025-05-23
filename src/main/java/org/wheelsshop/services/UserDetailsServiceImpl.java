@@ -9,7 +9,6 @@ import org.wheelsshop.entities.User;
 import org.wheelsshop.repository.jpa.UserJpaRepository;
 
 import java.util.Collections;
-import java.util.Objects;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
@@ -21,16 +20,13 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User user = userJpaRepository.findByEmail(username);
+        User user = userJpaRepository.findByEmail(username)
+                .orElseThrow(() -> new UsernameNotFoundException(username));
 
-        if (Objects.nonNull(user)) {
-            return new org.springframework.security.core.userdetails.User(
-                    user.getEmail(),
-                    user.getHashPassword(),
-                    Collections.singletonList(new SimpleGrantedAuthority("ROLE_" + user.getRole()))
-            );
-        }
-
-        throw new UsernameNotFoundException(username);
+        return new org.springframework.security.core.userdetails.User(
+                user.getEmail(),
+                user.getHashPassword(),
+                Collections.singletonList(new SimpleGrantedAuthority("ROLE_" + user.getRole()))
+        );
     }
 }

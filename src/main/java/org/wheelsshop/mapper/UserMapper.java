@@ -6,8 +6,8 @@ import org.wheelsshop.entities.User;
 import org.wheelsshop.request.UserRequest;
 
 @Mapper(componentModel = "spring")
-public interface UserMapper extends EntityMapper<User> {
-    User fromUserRequest(UserRequest userRequest);
+public interface UserMapper {
+    UserDto UserToDto(User user);
 
-    UserDto toDto(User user);
+    User fromUserRequest(UserRequest request);
 }

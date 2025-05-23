@@ -2,11 +2,12 @@ package org.wheelsshop.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 
+import javax.naming.AuthenticationException;
 import java.lang.reflect.InvocationTargetException;
 import java.time.LocalDateTime;
 
@@ -38,9 +39,20 @@ public class GlobalExceptionHandler {
         return handleException(e, webRequest, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
-    @ExceptionHandler(BadCredentialsException.class)
-    public ResponseEntity<ErrorDetails> handleBadCredentialsException(BadCredentialsException e,
-                                                                      WebRequest webRequest) {
-        return handleException(e, webRequest, HttpStatus.UNAUTHORIZED);
+    @ExceptionHandler(AuthenticationException.class)
+    public ResponseEntity<ErrorDetails> handleAuthenticationException(AuthenticationException e,
+                                                                WebRequest request) {
+        return handleException(e, request, HttpStatus.UNAUTHORIZED);
+    }
+
+    @ExceptionHandler(UsernameNotFoundException.class)
+    public ResponseEntity<ErrorDetails> handleUsernameNotFoundException(UsernameNotFoundException e,
+                                                                        WebRequest request) {
+        return handleException(e, request, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<ErrorDetails> handleOtherExceptions(Exception e, WebRequest request) {
+        return handleException(e, request, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 }

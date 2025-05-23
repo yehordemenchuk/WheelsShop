@@ -7,5 +7,5 @@ public record UserDto(Long id,
                       String name,
                       String surname,
                       String email,
-                      Role role) implements Dto<User> {
+                      Role role) {
 }

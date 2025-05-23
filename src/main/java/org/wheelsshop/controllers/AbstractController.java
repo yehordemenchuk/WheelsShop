@@ -1,8 +1,6 @@
 package org.wheelsshop.controllers;
 
 import org.springframework.web.bind.annotation.*;
-import org.wheelsshop.dto.Dto;
-import org.wheelsshop.request.Request;
 import org.wheelsshop.services.ServiceContract;
 
 import java.lang.reflect.InvocationTargetException;
@@ -19,20 +17,20 @@ public abstract class AbstractController<T> implements Controller<T> {
 
     @PostMapping("/save")
     @Override
-    public void save(@RequestBody Request<T> r) throws InvocationTargetException,
+    public void save(@RequestBody T t) throws InvocationTargetException,
             NoSuchMethodException, IllegalAccessException {
-        service.save(r);
+        service.save(t);
     }
 
     @GetMapping("/all")
     @Override
-    public List<Dto<T>> findAll() {
+    public List<T> findAll() {
         return service.findAll();
     }
 
     @GetMapping("/find/{id}")
     @Override
-    public Dto<T> findById(@PathVariable long id) throws InvocationTargetException, NoSuchMethodException,
+    public T findById(@PathVariable long id) throws InvocationTargetException, NoSuchMethodException,
             IllegalAccessException {
 
         return service.findById(id);
