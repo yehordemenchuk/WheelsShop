@@ -35,6 +35,7 @@ public class SecurityConfig {
                         auth.requestMatchers(
                                         "/api/v1/cars/save",
                                         "/api/v1/brands/save",
+                                        "/api/v1/orders/save",
                                         "/api/v1/cars/delete/**",
                                         "/api/v1/brand/delete/**",
                                         "/api/v1/users/all",
@@ -42,7 +43,7 @@ public class SecurityConfig {
                                         "/api/v1/users/find/**"
                                 ).hasRole(ADMIN_ROLE_NAME)
                                 .requestMatchers(
-                                        "/api/v1/orders/save",
+                                        "/api/v1/users/make-order",
                                         "/api/v1/orders/find/**",
                                         "/api/v1/orders/**"
                                 ).authenticated()

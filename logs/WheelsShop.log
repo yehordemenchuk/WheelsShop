@@ -7568,3 +7568,625 @@ Caused by: java.io.FileNotFoundException: class path resource [org/wheelsshop/ma
 2025-05-29T22:05:54.695+02:00  INFO 392 --- [WheelsShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-05-29T22:05:54.698+02:00  INFO 392 --- [WheelsShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-05-29T22:05:54.703+02:00  INFO 392 --- [WheelsShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-29T22:11:22.470+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : Starting WheelsShopApplication using Java 17.0.14 with PID 9356 (D:\Documents\WheelsShop-master\target\classes started by Admin in D:\Documents\WheelsShop-master)
+2025-05-29T22:11:22.472+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-05-29T22:11:22.512+02:00  INFO 9356 --- [WheelsShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-29T22:11:22.514+02:00  INFO 9356 --- [WheelsShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-29T22:11:23.473+02:00  INFO 9356 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-29T22:11:23.476+02:00  INFO 9356 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-29T22:11:23.615+02:00  INFO 9356 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125 ms. Found 4 JPA repository interfaces.
+2025-05-29T22:11:23.630+02:00  INFO 9356 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-29T22:11:23.631+02:00  INFO 9356 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-29T22:11:23.646+02:00  INFO 9356 --- [WheelsShop] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.wheelsshop.repository.jpa.BrandJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-29T22:11:23.646+02:00  INFO 9356 --- [WheelsShop] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.wheelsshop.repository.jpa.CarJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-29T22:11:23.647+02:00  INFO 9356 --- [WheelsShop] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.wheelsshop.repository.jpa.OrderJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-29T22:11:23.648+02:00  INFO 9356 --- [WheelsShop] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.wheelsshop.repository.jpa.UserJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-29T22:11:23.648+02:00  INFO 9356 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2025-05-29T22:11:24.336+02:00  INFO 9356 --- [WheelsShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-29T22:11:24.347+02:00  INFO 9356 --- [WheelsShop] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-29T22:11:24.348+02:00  INFO 9356 --- [WheelsShop] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-29T22:11:24.385+02:00  INFO 9356 --- [WheelsShop] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-29T22:11:24.386+02:00  INFO 9356 --- [WheelsShop] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1872 ms
+2025-05-29T22:11:24.565+02:00  INFO 9356 --- [WheelsShop] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-29T22:11:24.608+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-29T22:11:24.633+02:00  INFO 9356 --- [WheelsShop] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-29T22:11:24.820+02:00  INFO 9356 --- [WheelsShop] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-29T22:11:24.843+02:00  INFO 9356 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-29T22:11:24.971+02:00  INFO 9356 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@568cd92f
+2025-05-29T22:11:24.974+02:00  INFO 9356 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-29T22:11:25.032+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-29T22:11:25.790+02:00  INFO 9356 --- [WheelsShop] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-29T22:11:26.098+02:00  INFO 9356 --- [WheelsShop] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-29T22:11:26.619+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : RedisConfig.redisTemplate(..) starts execution
+2025-05-29T22:11:26.666+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : RedisConfig.redisTemplate(..) returns org.springframework.data.redis.core.RedisTemplate@3b5f812d
+2025-05-29T22:11:26.666+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 46 ms
+2025-05-29T22:11:26.667+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : RedisConfig.redisTemplate(..) ends execution
+2025-05-29T22:11:26.918+02:00  WARN 9356 --- [WheelsShop] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-29T22:11:26.947+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.passwordEncoder() starts execution
+2025-05-29T22:11:26.948+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.passwordEncoder() returns org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder@737aa4ea
+2025-05-29T22:11:26.948+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 0 ms
+2025-05-29T22:11:26.948+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.passwordEncoder() ends execution
+2025-05-29T22:11:26.955+02:00  INFO 9356 --- [WheelsShop] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-05-29T22:11:27.042+02:00  INFO 9356 --- [WheelsShop] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-29T22:11:27.046+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : CorsConfig.addCorsMappings(..) starts execution
+2025-05-29T22:11:27.048+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : CorsConfig.addCorsMappings(..) returns null
+2025-05-29T22:11:27.048+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 0 ms
+2025-05-29T22:11:27.048+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : CorsConfig.addCorsMappings(..) ends execution
+2025-05-29T22:11:27.278+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.authenticationManager(..) starts execution
+2025-05-29T22:11:27.279+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.authenticationManager(..) returns org.springframework.security.authentication.ProviderManager@44c282f1
+2025-05-29T22:11:27.279+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 0 ms
+2025-05-29T22:11:27.279+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.authenticationManager(..) ends execution
+2025-05-29T22:11:27.280+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.securityFilterChain(..) starts execution
+2025-05-29T22:11:27.341+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.securityFilterChain(..) returns DefaultSecurityFilterChain matching [any request] and having filters [DisableEncodeUrl, WebAsyncManagerIntegration, SecurityContextHolder, HeaderWriter, Logout, LoginAndPassword, RequestCacheAware, SecurityContextHolderAwareRequest, AnonymousAuthentication, SessionManagement, ExceptionTranslation, Authorization]
+2025-05-29T22:11:27.342+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 61 ms
+2025-05-29T22:11:27.342+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.securityFilterChain(..) ends execution
+2025-05-29T22:11:27.755+02:00  INFO 9356 --- [WheelsShop] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-29T22:11:27.789+02:00  INFO 9356 --- [WheelsShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-29T22:11:27.797+02:00  INFO 9356 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : Started WheelsShopApplication in 5.746 seconds (process running for 6.492)
+2025-05-29T22:11:40.671+02:00  INFO 9356 --- [WheelsShop] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-29T22:11:40.792+02:00  INFO 9356 --- [WheelsShop] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-29T22:11:40.849+02:00  INFO 9356 --- [WheelsShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-29T22:11:40.853+02:00  INFO 9356 --- [WheelsShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-29T22:11:40.859+02:00  INFO 9356 --- [WheelsShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-29T22:24:13.573+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : Starting WheelsShopApplication using Java 17.0.14 with PID 14472 (D:\Documents\WheelsShop-master\target\classes started by Admin in D:\Documents\WheelsShop-master)
+2025-05-29T22:24:13.575+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-05-29T22:24:13.614+02:00  INFO 14472 --- [WheelsShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-29T22:24:13.615+02:00  INFO 14472 --- [WheelsShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-29T22:24:14.346+02:00  INFO 14472 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-29T22:24:14.348+02:00  INFO 14472 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-29T22:24:14.514+02:00  INFO 14472 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 148 ms. Found 4 JPA repository interfaces.
+2025-05-29T22:24:14.531+02:00  INFO 14472 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-29T22:24:14.532+02:00  INFO 14472 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-29T22:24:14.547+02:00  INFO 14472 --- [WheelsShop] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.wheelsshop.repository.jpa.BrandJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-29T22:24:14.547+02:00  INFO 14472 --- [WheelsShop] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.wheelsshop.repository.jpa.CarJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-29T22:24:14.548+02:00  INFO 14472 --- [WheelsShop] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.wheelsshop.repository.jpa.OrderJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-29T22:24:14.549+02:00  INFO 14472 --- [WheelsShop] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.wheelsshop.repository.jpa.UserJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-29T22:24:14.549+02:00  INFO 14472 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2025-05-29T22:24:15.234+02:00  INFO 14472 --- [WheelsShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-29T22:24:15.244+02:00  INFO 14472 --- [WheelsShop] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-29T22:24:15.244+02:00  INFO 14472 --- [WheelsShop] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-29T22:24:15.281+02:00  INFO 14472 --- [WheelsShop] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-29T22:24:15.281+02:00  INFO 14472 --- [WheelsShop] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1666 ms
+2025-05-29T22:24:15.452+02:00  INFO 14472 --- [WheelsShop] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-29T22:24:15.487+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-29T22:24:15.509+02:00  INFO 14472 --- [WheelsShop] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-29T22:24:15.684+02:00  INFO 14472 --- [WheelsShop] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-29T22:24:15.708+02:00  INFO 14472 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-29T22:24:15.850+02:00  INFO 14472 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@31c42f0b
+2025-05-29T22:24:15.852+02:00  INFO 14472 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-29T22:24:15.922+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-29T22:24:16.849+02:00  INFO 14472 --- [WheelsShop] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-29T22:24:17.134+02:00  INFO 14472 --- [WheelsShop] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-29T22:24:17.740+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : RedisConfig.redisTemplate(..) starts execution
+2025-05-29T22:24:17.821+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : RedisConfig.redisTemplate(..) returns org.springframework.data.redis.core.RedisTemplate@1a057b50
+2025-05-29T22:24:17.822+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 81 ms
+2025-05-29T22:24:17.822+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : RedisConfig.redisTemplate(..) ends execution
+2025-05-29T22:24:18.142+02:00  WARN 14472 --- [WheelsShop] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-29T22:24:18.178+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.passwordEncoder() starts execution
+2025-05-29T22:24:18.179+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.passwordEncoder() returns org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder@e37328e
+2025-05-29T22:24:18.180+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 2 ms
+2025-05-29T22:24:18.180+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.passwordEncoder() ends execution
+2025-05-29T22:24:18.187+02:00  INFO 14472 --- [WheelsShop] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-05-29T22:24:18.277+02:00  INFO 14472 --- [WheelsShop] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-29T22:24:18.282+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : CorsConfig.addCorsMappings(..) starts execution
+2025-05-29T22:24:18.285+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : CorsConfig.addCorsMappings(..) returns null
+2025-05-29T22:24:18.285+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 2 ms
+2025-05-29T22:24:18.286+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : CorsConfig.addCorsMappings(..) ends execution
+2025-05-29T22:24:18.533+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.authenticationManager(..) starts execution
+2025-05-29T22:24:18.533+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.authenticationManager(..) returns org.springframework.security.authentication.ProviderManager@2f32e3b0
+2025-05-29T22:24:18.533+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 0 ms
+2025-05-29T22:24:18.533+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.authenticationManager(..) ends execution
+2025-05-29T22:24:18.534+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.securityFilterChain(..) starts execution
+2025-05-29T22:24:18.611+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.securityFilterChain(..) returns DefaultSecurityFilterChain matching [any request] and having filters [DisableEncodeUrl, WebAsyncManagerIntegration, SecurityContextHolder, HeaderWriter, Logout, LoginAndPassword, RequestCacheAware, SecurityContextHolderAwareRequest, AnonymousAuthentication, SessionManagement, ExceptionTranslation, Authorization]
+2025-05-29T22:24:18.611+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 77 ms
+2025-05-29T22:24:18.612+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.securityFilterChain(..) ends execution
+2025-05-29T22:24:19.084+02:00  INFO 14472 --- [WheelsShop] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-29T22:24:19.118+02:00  INFO 14472 --- [WheelsShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-29T22:24:19.128+02:00  INFO 14472 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : Started WheelsShopApplication in 5.961 seconds (process running for 6.518)
+2025-05-29T22:25:01.862+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-29T22:25:01.862+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-29T22:25:01.863+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-29T22:25:43.531+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-2] org.wheelsshop.aspects.LoggerAspect      : UserDetailsServiceImpl.loadUserByUsername(..) starts execution
+2025-05-29T22:25:43.532+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-2] org.wheelsshop.aspects.LoggerAspect      : UserJpaRepository.findByEmail(..) starts execution
+2025-05-29T22:25:43.769+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-2] org.wheelsshop.aspects.LoggerAspect      : UserJpaRepository.findByEmail(..) returns Optional[org.wheelsshop.entities.User@3fa721c9]
+2025-05-29T22:25:43.770+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-2] org.wheelsshop.aspects.LoggerAspect      : duration: 237 ms
+2025-05-29T22:25:43.771+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-2] org.wheelsshop.aspects.LoggerAspect      : UserJpaRepository.findByEmail(..) ends execution
+2025-05-29T22:25:43.775+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-2] org.wheelsshop.aspects.LoggerAspect      : UserDetailsServiceImpl.loadUserByUsername(..) returns org.springframework.security.core.userdetails.User [Username=yrmoluk521@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_CUSTOMER]]
+2025-05-29T22:25:43.776+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-2] org.wheelsshop.aspects.LoggerAspect      : duration: 243 ms
+2025-05-29T22:25:43.776+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-2] org.wheelsshop.aspects.LoggerAspect      : UserDetailsServiceImpl.loadUserByUsername(..) ends execution
+2025-05-29T22:25:43.776+02:00  WARN 14472 --- [WheelsShop] [http-nio-8080-exec-2] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2025-05-29T22:25:47.716+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : UserDetailsServiceImpl.loadUserByUsername(..) starts execution
+2025-05-29T22:25:47.717+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : UserJpaRepository.findByEmail(..) starts execution
+2025-05-29T22:25:47.721+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : UserJpaRepository.findByEmail(..) returns Optional[org.wheelsshop.entities.User@4794c585]
+2025-05-29T22:25:47.721+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : duration: 4 ms
+2025-05-29T22:25:47.721+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : UserJpaRepository.findByEmail(..) ends execution
+2025-05-29T22:25:47.721+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : UserDetailsServiceImpl.loadUserByUsername(..) returns org.springframework.security.core.userdetails.User [Username=yrmoluk521@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_CUSTOMER]]
+2025-05-29T22:25:47.722+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : duration: 5 ms
+2025-05-29T22:25:47.722+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : UserDetailsServiceImpl.loadUserByUsername(..) ends execution
+2025-05-29T22:25:47.722+02:00  WARN 14472 --- [WheelsShop] [http-nio-8080-exec-3] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2025-05-29T22:25:48.618+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-4] org.wheelsshop.aspects.LoggerAspect      : UserDetailsServiceImpl.loadUserByUsername(..) starts execution
+2025-05-29T22:25:48.618+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-4] org.wheelsshop.aspects.LoggerAspect      : UserJpaRepository.findByEmail(..) starts execution
+2025-05-29T22:25:48.623+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-4] org.wheelsshop.aspects.LoggerAspect      : UserJpaRepository.findByEmail(..) returns Optional[org.wheelsshop.entities.User@54cf6de7]
+2025-05-29T22:25:48.623+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-4] org.wheelsshop.aspects.LoggerAspect      : duration: 4 ms
+2025-05-29T22:25:48.623+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-4] org.wheelsshop.aspects.LoggerAspect      : UserJpaRepository.findByEmail(..) ends execution
+2025-05-29T22:25:48.623+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-4] org.wheelsshop.aspects.LoggerAspect      : UserDetailsServiceImpl.loadUserByUsername(..) returns org.springframework.security.core.userdetails.User [Username=yrmoluk521@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_CUSTOMER]]
+2025-05-29T22:25:48.623+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-4] org.wheelsshop.aspects.LoggerAspect      : duration: 4 ms
+2025-05-29T22:25:48.624+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-4] org.wheelsshop.aspects.LoggerAspect      : UserDetailsServiceImpl.loadUserByUsername(..) ends execution
+2025-05-29T22:25:48.624+02:00  WARN 14472 --- [WheelsShop] [http-nio-8080-exec-4] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2025-05-29T22:26:09.845+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-5] org.wheelsshop.aspects.LoggerAspect      : UserDetailsServiceImpl.loadUserByUsername(..) starts execution
+2025-05-29T22:26:09.845+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-5] org.wheelsshop.aspects.LoggerAspect      : UserJpaRepository.findByEmail(..) starts execution
+2025-05-29T22:26:09.848+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-5] org.wheelsshop.aspects.LoggerAspect      : UserJpaRepository.findByEmail(..) returns Optional[org.wheelsshop.entities.User@50df165d]
+2025-05-29T22:26:09.849+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-5] org.wheelsshop.aspects.LoggerAspect      : duration: 4 ms
+2025-05-29T22:26:09.849+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-5] org.wheelsshop.aspects.LoggerAspect      : UserJpaRepository.findByEmail(..) ends execution
+2025-05-29T22:26:09.849+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-5] org.wheelsshop.aspects.LoggerAspect      : UserDetailsServiceImpl.loadUserByUsername(..) returns org.springframework.security.core.userdetails.User [Username=dem@gmail.com, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]]
+2025-05-29T22:26:09.849+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-5] org.wheelsshop.aspects.LoggerAspect      : duration: 4 ms
+2025-05-29T22:26:09.849+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-5] org.wheelsshop.aspects.LoggerAspect      : UserDetailsServiceImpl.loadUserByUsername(..) ends execution
+2025-05-29T22:26:28.137+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : UserController.makeOrder(..) starts execution
+2025-05-29T22:26:28.137+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : OrderService.makeOrder(..) starts execution
+2025-05-29T22:26:28.138+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) starts execution
+2025-05-29T22:26:28.138+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) starts execution
+2025-05-29T22:26:28.141+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:26:28.179+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.User@4096e233]
+2025-05-29T22:26:28.179+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : duration: 37 ms
+2025-05-29T22:26:28.179+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:26:28.179+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) returns org.wheelsshop.entities.User@4096e233
+2025-05-29T22:26:28.179+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : duration: 41 ms
+2025-05-29T22:26:28.179+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) ends execution
+2025-05-29T22:26:28.180+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) starts execution
+2025-05-29T22:26:28.180+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:26:28.186+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.Car@6daef4cc]
+2025-05-29T22:26:28.186+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : duration: 5 ms
+2025-05-29T22:26:28.186+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:26:28.187+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) returns org.wheelsshop.entities.Car@6daef4cc
+2025-05-29T22:26:28.187+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : duration: 6 ms
+2025-05-29T22:26:28.187+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) ends execution
+2025-05-29T22:26:28.187+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) returns org.wheelsshop.entities.Order@3a99e0fd
+2025-05-29T22:26:28.187+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : duration: 48 ms
+2025-05-29T22:26:28.187+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) ends execution
+2025-05-29T22:26:28.188+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) starts execution
+2025-05-29T22:26:28.252+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) returns org.wheelsshop.entities.Order@3a99e0fd
+2025-05-29T22:26:28.252+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : duration: 64 ms
+2025-05-29T22:26:28.252+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) ends execution
+2025-05-29T22:26:28.254+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : AbstractRedisRepository.deleteById(..) starts execution
+2025-05-29T22:26:29.101+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : AbstractRedisRepository.deleteById(..) returns null
+2025-05-29T22:26:29.101+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : duration: 847 ms
+2025-05-29T22:26:29.101+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : AbstractRedisRepository.deleteById(..) ends execution
+2025-05-29T22:26:29.101+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) starts execution
+2025-05-29T22:26:29.102+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) starts execution
+2025-05-29T22:26:29.102+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:26:29.104+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.User@4096e233]
+2025-05-29T22:26:29.104+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : duration: 1 ms
+2025-05-29T22:26:29.104+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:26:29.105+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) returns org.wheelsshop.entities.User@4096e233
+2025-05-29T22:26:29.105+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : duration: 2 ms
+2025-05-29T22:26:29.105+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) ends execution
+2025-05-29T22:26:29.105+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) starts execution
+2025-05-29T22:26:29.105+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:26:29.106+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.Car@6daef4cc]
+2025-05-29T22:26:29.106+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : duration: 1 ms
+2025-05-29T22:26:29.107+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:26:29.107+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) returns org.wheelsshop.entities.Car@6daef4cc
+2025-05-29T22:26:29.107+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : duration: 2 ms
+2025-05-29T22:26:29.107+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) ends execution
+2025-05-29T22:26:29.107+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) returns org.wheelsshop.entities.Order@25d37e73
+2025-05-29T22:26:29.107+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : duration: 5 ms
+2025-05-29T22:26:29.107+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) ends execution
+2025-05-29T22:26:29.107+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : OrderService.makeOrder(..) returns dem@gmail.com
+2025-05-29T22:26:29.107+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : duration: 969 ms
+2025-05-29T22:26:29.107+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : OrderService.makeOrder(..) ends execution
+2025-05-29T22:26:29.107+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : MailSenderService.sendOrderEmail(..) starts execution
+2025-05-29T22:26:31.356+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : MailSenderService.sendOrderEmail(..) returns null
+2025-05-29T22:26:31.356+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : duration: 2248 ms
+2025-05-29T22:26:31.356+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : MailSenderService.sendOrderEmail(..) ends execution
+2025-05-29T22:26:31.356+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : UserController.makeOrder(..) returns null
+2025-05-29T22:26:31.356+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : duration: 3218 ms
+2025-05-29T22:26:31.356+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-6] org.wheelsshop.aspects.LoggerAspect      : UserController.makeOrder(..) ends execution
+2025-05-29T22:26:42.290+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : UserController.makeOrder(..) starts execution
+2025-05-29T22:26:42.290+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : OrderService.makeOrder(..) starts execution
+2025-05-29T22:26:42.290+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) starts execution
+2025-05-29T22:26:42.290+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) starts execution
+2025-05-29T22:26:42.290+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:26:42.293+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.User@422be669]
+2025-05-29T22:26:42.293+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : duration: 3 ms
+2025-05-29T22:26:42.293+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:26:42.293+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) returns org.wheelsshop.entities.User@422be669
+2025-05-29T22:26:42.293+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : duration: 3 ms
+2025-05-29T22:26:42.293+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) ends execution
+2025-05-29T22:26:42.294+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) starts execution
+2025-05-29T22:26:42.294+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:26:42.295+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.Car@2e4d545d]
+2025-05-29T22:26:42.295+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : duration: 1 ms
+2025-05-29T22:26:42.295+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:26:42.295+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) returns org.wheelsshop.entities.Car@2e4d545d
+2025-05-29T22:26:42.295+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : duration: 1 ms
+2025-05-29T22:26:42.295+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) ends execution
+2025-05-29T22:26:42.297+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) returns org.wheelsshop.entities.Order@d04abbf
+2025-05-29T22:26:42.297+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : duration: 7 ms
+2025-05-29T22:26:42.297+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) ends execution
+2025-05-29T22:26:42.297+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) starts execution
+2025-05-29T22:26:42.302+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) returns org.wheelsshop.entities.Order@d04abbf
+2025-05-29T22:26:42.302+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : duration: 5 ms
+2025-05-29T22:26:42.302+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) ends execution
+2025-05-29T22:26:42.302+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : AbstractRedisRepository.deleteById(..) starts execution
+2025-05-29T22:26:42.305+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : AbstractRedisRepository.deleteById(..) returns null
+2025-05-29T22:26:42.305+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : duration: 2 ms
+2025-05-29T22:26:42.305+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : AbstractRedisRepository.deleteById(..) ends execution
+2025-05-29T22:26:42.305+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) starts execution
+2025-05-29T22:26:42.305+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) starts execution
+2025-05-29T22:26:42.306+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:26:42.306+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.User@422be669]
+2025-05-29T22:26:42.306+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : duration: 0 ms
+2025-05-29T22:26:42.306+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:26:42.306+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) returns org.wheelsshop.entities.User@422be669
+2025-05-29T22:26:42.307+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : duration: 1 ms
+2025-05-29T22:26:42.307+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) ends execution
+2025-05-29T22:26:42.307+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) starts execution
+2025-05-29T22:26:42.307+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:26:42.308+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.Car@2e4d545d]
+2025-05-29T22:26:42.308+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : duration: 0 ms
+2025-05-29T22:26:42.308+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:26:42.308+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) returns org.wheelsshop.entities.Car@2e4d545d
+2025-05-29T22:26:42.308+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : duration: 0 ms
+2025-05-29T22:26:42.308+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) ends execution
+2025-05-29T22:26:42.308+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) returns org.wheelsshop.entities.Order@71f3e1c3
+2025-05-29T22:26:42.308+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : duration: 2 ms
+2025-05-29T22:26:42.309+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) ends execution
+2025-05-29T22:26:42.309+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : OrderService.makeOrder(..) returns yrmoluk521@gmail.com
+2025-05-29T22:26:42.309+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : duration: 18 ms
+2025-05-29T22:26:42.309+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : OrderService.makeOrder(..) ends execution
+2025-05-29T22:26:42.309+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : MailSenderService.sendOrderEmail(..) starts execution
+2025-05-29T22:26:43.728+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : MailSenderService.sendOrderEmail(..) returns null
+2025-05-29T22:26:43.729+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : duration: 1420 ms
+2025-05-29T22:26:43.729+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : MailSenderService.sendOrderEmail(..) ends execution
+2025-05-29T22:26:43.729+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : UserController.makeOrder(..) returns null
+2025-05-29T22:26:43.729+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : duration: 1439 ms
+2025-05-29T22:26:43.729+02:00  INFO 14472 --- [WheelsShop] [http-nio-8080-exec-7] org.wheelsshop.aspects.LoggerAspect      : UserController.makeOrder(..) ends execution
+2025-05-29T22:28:03.549+02:00  INFO 14472 --- [WheelsShop] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-29T22:28:03.660+02:00  INFO 14472 --- [WheelsShop] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-29T22:28:03.689+02:00  INFO 14472 --- [WheelsShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-29T22:28:03.692+02:00  INFO 14472 --- [WheelsShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-29T22:28:03.697+02:00  INFO 14472 --- [WheelsShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-29T22:31:54.827+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : Starting WheelsShopApplication using Java 17.0.14 with PID 24132 (D:\Documents\WheelsShop-master\target\classes started by Admin in D:\Documents\WheelsShop-master)
+2025-05-29T22:31:54.830+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-05-29T22:31:54.868+02:00  INFO 24132 --- [WheelsShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-29T22:31:54.869+02:00  INFO 24132 --- [WheelsShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-29T22:31:55.572+02:00  INFO 24132 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-29T22:31:55.574+02:00  INFO 24132 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-29T22:31:55.713+02:00  INFO 24132 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 4 JPA repository interfaces.
+2025-05-29T22:31:55.734+02:00  INFO 24132 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-29T22:31:55.735+02:00  INFO 24132 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-29T22:31:55.756+02:00  INFO 24132 --- [WheelsShop] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.wheelsshop.repository.jpa.BrandJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-29T22:31:55.756+02:00  INFO 24132 --- [WheelsShop] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.wheelsshop.repository.jpa.CarJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-29T22:31:55.757+02:00  INFO 24132 --- [WheelsShop] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.wheelsshop.repository.jpa.OrderJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-29T22:31:55.758+02:00  INFO 24132 --- [WheelsShop] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.wheelsshop.repository.jpa.UserJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-29T22:31:55.758+02:00  INFO 24132 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2025-05-29T22:31:56.641+02:00  INFO 24132 --- [WheelsShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-29T22:31:56.659+02:00  INFO 24132 --- [WheelsShop] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-29T22:31:56.660+02:00  INFO 24132 --- [WheelsShop] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-29T22:31:56.713+02:00  INFO 24132 --- [WheelsShop] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-29T22:31:56.714+02:00  INFO 24132 --- [WheelsShop] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1844 ms
+2025-05-29T22:31:56.950+02:00  INFO 24132 --- [WheelsShop] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-29T22:31:56.985+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-29T22:31:57.012+02:00  INFO 24132 --- [WheelsShop] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-29T22:31:57.187+02:00  INFO 24132 --- [WheelsShop] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-29T22:31:57.208+02:00  INFO 24132 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-29T22:31:57.354+02:00  INFO 24132 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1ff3fc74
+2025-05-29T22:31:57.356+02:00  INFO 24132 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-29T22:31:57.421+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-29T22:31:58.327+02:00  INFO 24132 --- [WheelsShop] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-29T22:31:58.736+02:00  INFO 24132 --- [WheelsShop] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-29T22:31:59.213+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : RedisConfig.redisTemplate(..) starts execution
+2025-05-29T22:31:59.262+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : RedisConfig.redisTemplate(..) returns org.springframework.data.redis.core.RedisTemplate@3a60d805
+2025-05-29T22:31:59.262+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 47 ms
+2025-05-29T22:31:59.263+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : RedisConfig.redisTemplate(..) ends execution
+2025-05-29T22:31:59.520+02:00  WARN 24132 --- [WheelsShop] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-29T22:31:59.547+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.passwordEncoder() starts execution
+2025-05-29T22:31:59.549+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.passwordEncoder() returns org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder@21c63012
+2025-05-29T22:31:59.549+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 0 ms
+2025-05-29T22:31:59.549+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.passwordEncoder() ends execution
+2025-05-29T22:31:59.555+02:00  INFO 24132 --- [WheelsShop] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-05-29T22:31:59.626+02:00  INFO 24132 --- [WheelsShop] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-29T22:31:59.630+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : CorsConfig.addCorsMappings(..) starts execution
+2025-05-29T22:31:59.631+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : CorsConfig.addCorsMappings(..) returns null
+2025-05-29T22:31:59.632+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 1 ms
+2025-05-29T22:31:59.634+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : CorsConfig.addCorsMappings(..) ends execution
+2025-05-29T22:31:59.861+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.authenticationManager(..) starts execution
+2025-05-29T22:31:59.861+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.authenticationManager(..) returns org.springframework.security.authentication.ProviderManager@3857128d
+2025-05-29T22:31:59.861+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 0 ms
+2025-05-29T22:31:59.861+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.authenticationManager(..) ends execution
+2025-05-29T22:31:59.862+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.securityFilterChain(..) starts execution
+2025-05-29T22:31:59.927+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.securityFilterChain(..) returns DefaultSecurityFilterChain matching [any request] and having filters [DisableEncodeUrl, WebAsyncManagerIntegration, SecurityContextHolder, HeaderWriter, Logout, LoginAndPassword, RequestCacheAware, SecurityContextHolderAwareRequest, AnonymousAuthentication, SessionManagement, ExceptionTranslation, Authorization]
+2025-05-29T22:31:59.928+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 65 ms
+2025-05-29T22:31:59.928+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.securityFilterChain(..) ends execution
+2025-05-29T22:32:00.378+02:00  INFO 24132 --- [WheelsShop] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-29T22:32:00.416+02:00  INFO 24132 --- [WheelsShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-29T22:32:00.425+02:00  INFO 24132 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : Started WheelsShopApplication in 6.013 seconds (process running for 6.566)
+2025-05-29T22:32:10.427+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-29T22:32:10.427+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-29T22:32:10.429+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-29T22:32:10.651+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : UserController.makeOrder(..) starts execution
+2025-05-29T22:32:10.652+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : OrderService.makeOrder(..) starts execution
+2025-05-29T22:32:10.653+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) starts execution
+2025-05-29T22:32:10.654+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) starts execution
+2025-05-29T22:32:10.659+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:32:10.781+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.User@41df21f7]
+2025-05-29T22:32:10.782+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 122 ms
+2025-05-29T22:32:10.782+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:32:10.782+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) returns org.wheelsshop.entities.User@41df21f7
+2025-05-29T22:32:10.784+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 129 ms
+2025-05-29T22:32:10.784+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) ends execution
+2025-05-29T22:32:10.784+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) starts execution
+2025-05-29T22:32:10.785+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:32:10.789+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.Car@3b46a29f]
+2025-05-29T22:32:10.790+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 5 ms
+2025-05-29T22:32:10.790+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:32:10.791+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) returns org.wheelsshop.entities.Car@3b46a29f
+2025-05-29T22:32:10.791+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 6 ms
+2025-05-29T22:32:10.791+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) ends execution
+2025-05-29T22:32:10.791+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) returns org.wheelsshop.entities.Order@e4776f0
+2025-05-29T22:32:10.791+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 136 ms
+2025-05-29T22:32:10.791+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) ends execution
+2025-05-29T22:32:10.792+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) starts execution
+2025-05-29T22:32:10.851+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) returns org.wheelsshop.entities.Order@e4776f0
+2025-05-29T22:32:10.852+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 58 ms
+2025-05-29T22:32:10.852+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) ends execution
+2025-05-29T22:32:10.852+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : AbstractRedisRepository.deleteById(..) starts execution
+2025-05-29T22:32:11.495+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : AbstractRedisRepository.deleteById(..) returns null
+2025-05-29T22:32:11.496+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 643 ms
+2025-05-29T22:32:11.496+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : AbstractRedisRepository.deleteById(..) ends execution
+2025-05-29T22:32:11.496+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) starts execution
+2025-05-29T22:32:11.497+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) starts execution
+2025-05-29T22:32:11.497+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:32:11.499+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.User@41df21f7]
+2025-05-29T22:32:11.499+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 1 ms
+2025-05-29T22:32:11.499+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:32:11.499+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) returns org.wheelsshop.entities.User@41df21f7
+2025-05-29T22:32:11.499+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 1 ms
+2025-05-29T22:32:11.500+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) ends execution
+2025-05-29T22:32:11.500+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) starts execution
+2025-05-29T22:32:11.500+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:32:11.501+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.Car@3b46a29f]
+2025-05-29T22:32:11.501+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 1 ms
+2025-05-29T22:32:11.501+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:32:11.501+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) returns org.wheelsshop.entities.Car@3b46a29f
+2025-05-29T22:32:11.502+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 2 ms
+2025-05-29T22:32:11.502+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) ends execution
+2025-05-29T22:32:11.502+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) returns org.wheelsshop.entities.Order@1f1e92bc
+2025-05-29T22:32:11.502+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 6 ms
+2025-05-29T22:32:11.502+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) ends execution
+2025-05-29T22:32:11.502+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:32:11.503+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.Car@3b46a29f]
+2025-05-29T22:32:11.504+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 1 ms
+2025-05-29T22:32:11.504+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:32:11.504+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) starts execution
+2025-05-29T22:32:11.521+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) returns org.wheelsshop.entities.Car@3b46a29f
+2025-05-29T22:32:11.522+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 17 ms
+2025-05-29T22:32:11.522+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) ends execution
+2025-05-29T22:32:11.522+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : OrderService.makeOrder(..) returns yrmoluk521@gmail.com
+2025-05-29T22:32:11.522+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 869 ms
+2025-05-29T22:32:11.522+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : OrderService.makeOrder(..) ends execution
+2025-05-29T22:32:11.522+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MailSenderService.sendOrderEmail(..) starts execution
+2025-05-29T22:32:13.684+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MailSenderService.sendOrderEmail(..) returns null
+2025-05-29T22:32:13.685+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 2162 ms
+2025-05-29T22:32:13.685+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MailSenderService.sendOrderEmail(..) ends execution
+2025-05-29T22:32:13.685+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : UserController.makeOrder(..) returns null
+2025-05-29T22:32:13.686+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 3034 ms
+2025-05-29T22:32:13.686+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : UserController.makeOrder(..) ends execution
+2025-05-29T22:32:25.094+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : UserController.makeOrder(..) starts execution
+2025-05-29T22:32:25.095+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : OrderService.makeOrder(..) starts execution
+2025-05-29T22:32:25.095+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) starts execution
+2025-05-29T22:32:25.095+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) starts execution
+2025-05-29T22:32:25.095+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:32:25.099+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.User@6473cbc8]
+2025-05-29T22:32:25.099+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : duration: 3 ms
+2025-05-29T22:32:25.099+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:32:25.099+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) returns org.wheelsshop.entities.User@6473cbc8
+2025-05-29T22:32:25.099+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : duration: 3 ms
+2025-05-29T22:32:25.099+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) ends execution
+2025-05-29T22:32:25.099+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) starts execution
+2025-05-29T22:32:25.099+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:32:25.101+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.Car@54ddbcb9]
+2025-05-29T22:32:25.101+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : duration: 2 ms
+2025-05-29T22:32:25.102+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:32:25.102+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) returns org.wheelsshop.entities.Car@54ddbcb9
+2025-05-29T22:32:25.102+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : duration: 3 ms
+2025-05-29T22:32:25.102+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) ends execution
+2025-05-29T22:32:25.102+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) returns org.wheelsshop.entities.Order@40404d5a
+2025-05-29T22:32:25.102+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : duration: 6 ms
+2025-05-29T22:32:25.102+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) ends execution
+2025-05-29T22:32:25.102+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) starts execution
+2025-05-29T22:32:25.105+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) returns org.wheelsshop.entities.Order@40404d5a
+2025-05-29T22:32:25.105+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : duration: 3 ms
+2025-05-29T22:32:25.105+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) ends execution
+2025-05-29T22:32:25.105+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : AbstractRedisRepository.deleteById(..) starts execution
+2025-05-29T22:32:25.107+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : AbstractRedisRepository.deleteById(..) returns null
+2025-05-29T22:32:25.107+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : duration: 1 ms
+2025-05-29T22:32:25.107+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : AbstractRedisRepository.deleteById(..) ends execution
+2025-05-29T22:32:25.107+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) starts execution
+2025-05-29T22:32:25.107+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) starts execution
+2025-05-29T22:32:25.107+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:32:25.107+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.User@6473cbc8]
+2025-05-29T22:32:25.108+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : duration: 1 ms
+2025-05-29T22:32:25.108+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:32:25.108+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) returns org.wheelsshop.entities.User@6473cbc8
+2025-05-29T22:32:25.108+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : duration: 1 ms
+2025-05-29T22:32:25.108+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) ends execution
+2025-05-29T22:32:25.108+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) starts execution
+2025-05-29T22:32:25.108+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:32:25.108+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.Car@54ddbcb9]
+2025-05-29T22:32:25.108+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : duration: 0 ms
+2025-05-29T22:32:25.108+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:32:25.108+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) returns org.wheelsshop.entities.Car@54ddbcb9
+2025-05-29T22:32:25.108+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : duration: 0 ms
+2025-05-29T22:32:25.108+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) ends execution
+2025-05-29T22:32:25.108+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) returns org.wheelsshop.entities.Order@3fe3e4e0
+2025-05-29T22:32:25.108+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : duration: 1 ms
+2025-05-29T22:32:25.108+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) ends execution
+2025-05-29T22:32:25.109+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:32:25.109+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.Car@54ddbcb9]
+2025-05-29T22:32:25.109+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : duration: 0 ms
+2025-05-29T22:32:25.109+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:32:25.110+02:00 ERROR 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : OrderService.makeOrder(..) exception: 400 BAD_REQUEST "Car`s count is 0"
+2025-05-29T22:32:25.110+02:00 ERROR 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : UserController.makeOrder(..) exception: 400 BAD_REQUEST "Car`s count is 0"
+2025-05-29T22:32:25.112+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : GlobalExceptionHandler.handleOtherExceptions(..) starts execution
+2025-05-29T22:32:25.114+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : GlobalExceptionHandler.handleOtherExceptions(..) returns <500 INTERNAL_SERVER_ERROR Internal Server Error,ErrorDetails[timestamp=2025-05-29T22:32:25.114200100, message=400 BAD_REQUEST "Car`s count is 0", path=uri=/api/v1/users/make-order, errorCode=INTERNAL_SERVER_ERROR],[]>
+2025-05-29T22:32:25.116+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : duration: 3 ms
+2025-05-29T22:32:25.116+02:00  INFO 24132 --- [WheelsShop] [http-nio-8080-exec-3] org.wheelsshop.aspects.LoggerAspect      : GlobalExceptionHandler.handleOtherExceptions(..) ends execution
+2025-05-29T22:32:25.142+02:00  WARN 24132 --- [WheelsShop] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Car`s count is 0"]
+2025-05-29T22:32:41.754+02:00  INFO 24132 --- [WheelsShop] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-29T22:32:41.803+02:00  INFO 24132 --- [WheelsShop] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-29T22:32:41.822+02:00  INFO 24132 --- [WheelsShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-29T22:32:41.824+02:00  INFO 24132 --- [WheelsShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-29T22:32:41.829+02:00  INFO 24132 --- [WheelsShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-29T22:34:08.125+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : Starting WheelsShopApplication using Java 17.0.14 with PID 17236 (D:\Documents\WheelsShop-master\target\classes started by Admin in D:\Documents\WheelsShop-master)
+2025-05-29T22:34:08.128+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-05-29T22:34:08.174+02:00  INFO 17236 --- [WheelsShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-29T22:34:08.174+02:00  INFO 17236 --- [WheelsShop] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-29T22:34:09.028+02:00  INFO 17236 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-29T22:34:09.035+02:00  INFO 17236 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-29T22:34:09.170+02:00  INFO 17236 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125 ms. Found 4 JPA repository interfaces.
+2025-05-29T22:34:09.186+02:00  INFO 17236 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-05-29T22:34:09.188+02:00  INFO 17236 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-05-29T22:34:09.202+02:00  INFO 17236 --- [WheelsShop] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.wheelsshop.repository.jpa.BrandJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-29T22:34:09.202+02:00  INFO 17236 --- [WheelsShop] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.wheelsshop.repository.jpa.CarJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-29T22:34:09.204+02:00  INFO 17236 --- [WheelsShop] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.wheelsshop.repository.jpa.OrderJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-29T22:34:09.205+02:00  INFO 17236 --- [WheelsShop] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.wheelsshop.repository.jpa.UserJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-05-29T22:34:09.205+02:00  INFO 17236 --- [WheelsShop] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2025-05-29T22:34:09.949+02:00  INFO 17236 --- [WheelsShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-29T22:34:09.959+02:00  INFO 17236 --- [WheelsShop] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-29T22:34:09.960+02:00  INFO 17236 --- [WheelsShop] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-29T22:34:10.002+02:00  INFO 17236 --- [WheelsShop] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-29T22:34:10.004+02:00  INFO 17236 --- [WheelsShop] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1829 ms
+2025-05-29T22:34:10.208+02:00  INFO 17236 --- [WheelsShop] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-29T22:34:10.244+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-29T22:34:10.270+02:00  INFO 17236 --- [WheelsShop] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-29T22:34:10.483+02:00  INFO 17236 --- [WheelsShop] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-29T22:34:10.502+02:00  INFO 17236 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-29T22:34:10.627+02:00  INFO 17236 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@71682964
+2025-05-29T22:34:10.628+02:00  INFO 17236 --- [WheelsShop] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-29T22:34:10.682+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-29T22:34:11.521+02:00  INFO 17236 --- [WheelsShop] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-29T22:34:11.810+02:00  INFO 17236 --- [WheelsShop] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-29T22:34:12.285+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : RedisConfig.redisTemplate(..) starts execution
+2025-05-29T22:34:12.329+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : RedisConfig.redisTemplate(..) returns org.springframework.data.redis.core.RedisTemplate@2e16c5f
+2025-05-29T22:34:12.329+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 44 ms
+2025-05-29T22:34:12.329+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : RedisConfig.redisTemplate(..) ends execution
+2025-05-29T22:34:12.577+02:00  WARN 17236 --- [WheelsShop] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-29T22:34:12.605+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.passwordEncoder() starts execution
+2025-05-29T22:34:12.606+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.passwordEncoder() returns org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder@43c0eed3
+2025-05-29T22:34:12.606+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 1 ms
+2025-05-29T22:34:12.607+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.passwordEncoder() ends execution
+2025-05-29T22:34:12.612+02:00  INFO 17236 --- [WheelsShop] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-05-29T22:34:12.685+02:00  INFO 17236 --- [WheelsShop] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-29T22:34:12.689+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : CorsConfig.addCorsMappings(..) starts execution
+2025-05-29T22:34:12.691+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : CorsConfig.addCorsMappings(..) returns null
+2025-05-29T22:34:12.691+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 2 ms
+2025-05-29T22:34:12.692+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : CorsConfig.addCorsMappings(..) ends execution
+2025-05-29T22:34:12.904+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.authenticationManager(..) starts execution
+2025-05-29T22:34:12.904+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.authenticationManager(..) returns org.springframework.security.authentication.ProviderManager@7c73d76c
+2025-05-29T22:34:12.904+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 0 ms
+2025-05-29T22:34:12.904+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.authenticationManager(..) ends execution
+2025-05-29T22:34:12.906+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.securityFilterChain(..) starts execution
+2025-05-29T22:34:12.971+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.securityFilterChain(..) returns DefaultSecurityFilterChain matching [any request] and having filters [DisableEncodeUrl, WebAsyncManagerIntegration, SecurityContextHolder, HeaderWriter, Logout, LoginAndPassword, RequestCacheAware, SecurityContextHolderAwareRequest, AnonymousAuthentication, SessionManagement, ExceptionTranslation, Authorization]
+2025-05-29T22:34:12.973+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : duration: 66 ms
+2025-05-29T22:34:12.973+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.aspects.LoggerAspect      : SecurityConfig.securityFilterChain(..) ends execution
+2025-05-29T22:34:13.416+02:00  INFO 17236 --- [WheelsShop] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-29T22:34:13.451+02:00  INFO 17236 --- [WheelsShop] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-29T22:34:13.461+02:00  INFO 17236 --- [WheelsShop] [restartedMain] org.wheelsshop.WheelsShopApplication     : Started WheelsShopApplication in 5.762 seconds (process running for 6.355)
+2025-05-29T22:34:16.614+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-29T22:34:16.614+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-29T22:34:16.615+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-29T22:34:16.732+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : UserController.makeOrder(..) starts execution
+2025-05-29T22:34:16.732+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : OrderService.makeOrder(..) starts execution
+2025-05-29T22:34:16.732+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) starts execution
+2025-05-29T22:34:16.734+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) starts execution
+2025-05-29T22:34:16.737+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:34:16.796+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.User@295d097]
+2025-05-29T22:34:16.796+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 59 ms
+2025-05-29T22:34:16.796+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:34:16.797+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) returns org.wheelsshop.entities.User@295d097
+2025-05-29T22:34:16.797+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 63 ms
+2025-05-29T22:34:16.798+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) ends execution
+2025-05-29T22:34:16.798+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) starts execution
+2025-05-29T22:34:16.798+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:34:16.802+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.Car@76747839]
+2025-05-29T22:34:16.802+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 4 ms
+2025-05-29T22:34:16.802+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:34:16.802+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) returns org.wheelsshop.entities.Car@76747839
+2025-05-29T22:34:16.802+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 4 ms
+2025-05-29T22:34:16.802+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) ends execution
+2025-05-29T22:34:16.802+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) returns org.wheelsshop.entities.Order@5964341c
+2025-05-29T22:34:16.802+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 68 ms
+2025-05-29T22:34:16.802+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) ends execution
+2025-05-29T22:34:16.804+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) starts execution
+2025-05-29T22:34:16.847+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) returns org.wheelsshop.entities.Order@5964341c
+2025-05-29T22:34:16.847+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 43 ms
+2025-05-29T22:34:16.847+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.save(..) ends execution
+2025-05-29T22:34:16.847+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : AbstractRedisRepository.deleteById(..) starts execution
+2025-05-29T22:34:17.246+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : AbstractRedisRepository.deleteById(..) returns null
+2025-05-29T22:34:17.247+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 400 ms
+2025-05-29T22:34:17.247+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : AbstractRedisRepository.deleteById(..) ends execution
+2025-05-29T22:34:17.247+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) starts execution
+2025-05-29T22:34:17.247+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) starts execution
+2025-05-29T22:34:17.247+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:34:17.248+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.User@295d097]
+2025-05-29T22:34:17.249+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 2 ms
+2025-05-29T22:34:17.249+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:34:17.249+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) returns org.wheelsshop.entities.User@295d097
+2025-05-29T22:34:17.249+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 2 ms
+2025-05-29T22:34:17.249+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getUser(..) ends execution
+2025-05-29T22:34:17.249+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) starts execution
+2025-05-29T22:34:17.249+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:34:17.250+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.Car@76747839]
+2025-05-29T22:34:17.250+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 0 ms
+2025-05-29T22:34:17.250+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:34:17.250+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) returns org.wheelsshop.entities.Car@76747839
+2025-05-29T22:34:17.250+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 0 ms
+2025-05-29T22:34:17.250+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : MapperHelper.getCar(..) ends execution
+2025-05-29T22:34:17.250+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) returns org.wheelsshop.entities.Order@127e046b
+2025-05-29T22:34:17.250+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 3 ms
+2025-05-29T22:34:17.250+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : OrderMapperImpl.fromRequest(..) ends execution
+2025-05-29T22:34:17.250+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) starts execution
+2025-05-29T22:34:17.251+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) returns Optional[org.wheelsshop.entities.Car@76747839]
+2025-05-29T22:34:17.251+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 1 ms
+2025-05-29T22:34:17.251+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : CrudRepository.findById(..) ends execution
+2025-05-29T22:34:17.252+02:00 ERROR 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : OrderService.makeOrder(..) exception: 400 BAD_REQUEST "Car`s count is 0"
+2025-05-29T22:34:17.254+02:00 ERROR 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : UserController.makeOrder(..) exception: 400 BAD_REQUEST "Car`s count is 0"
+2025-05-29T22:34:17.256+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : GlobalExceptionHandler.handleOtherExceptions(..) starts execution
+2025-05-29T22:34:17.257+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : GlobalExceptionHandler.handleOtherExceptions(..) returns <500 INTERNAL_SERVER_ERROR Internal Server Error,ErrorDetails[timestamp=2025-05-29T22:34:17.257427700, message=400 BAD_REQUEST "Car`s count is 0", path=uri=/api/v1/users/make-order, errorCode=INTERNAL_SERVER_ERROR],[]>
+2025-05-29T22:34:17.260+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : duration: 3 ms
+2025-05-29T22:34:17.260+02:00  INFO 17236 --- [WheelsShop] [http-nio-8080-exec-1] org.wheelsshop.aspects.LoggerAspect      : GlobalExceptionHandler.handleOtherExceptions(..) ends execution
+2025-05-29T22:34:17.291+02:00  WARN 17236 --- [WheelsShop] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Car`s count is 0"]
+2025-05-29T22:34:22.732+02:00  INFO 17236 --- [WheelsShop] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-29T22:34:22.775+02:00  INFO 17236 --- [WheelsShop] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-29T22:34:22.791+02:00  INFO 17236 --- [WheelsShop] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-29T22:34:22.794+02:00  INFO 17236 --- [WheelsShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-29T22:34:22.795+02:00  INFO 17236 --- [WheelsShop] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
