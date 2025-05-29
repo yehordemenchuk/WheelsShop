@@ -1,69 +1,38 @@
 package org.wheelsshop.services;
 
-import org.apache.coyote.BadRequestException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 import org.wheelsshop.dto.UserDto;
 import org.wheelsshop.entities.User;
-import org.wheelsshop.exceptions.EntityNotFoundException;
 import org.wheelsshop.mapper.UserMapper;
 import org.wheelsshop.repository.jpa.UserJpaRepository;
 import org.wheelsshop.repository.redis.UserRedisRepository;
 import org.wheelsshop.request.UserRequest;
 
-import java.util.List;
-import java.util.Objects;
+import java.lang.reflect.InvocationTargetException;
 
 @Service
-public class UserService {
-    private final UserJpaRepository userJpaRepository;
-    private final UserRedisRepository userRedisRepository;
-    private final UserMapper userMapper;
-
+public class UserService extends AbstractService<UserDto, User, UserRequest> {
     @Autowired
     public UserService(UserJpaRepository userJpaRepository,
                        UserRedisRepository userRedisRepository,
                        UserMapper userMapper) {
-        this.userJpaRepository = userJpaRepository;
-        this.userRedisRepository = userRedisRepository;
-        this.userMapper = userMapper;
+        super(userJpaRepository, userRedisRepository, User.class, userMapper);
     }
 
-    public UserDto findById(Long id) {
-        User user = userRedisRepository.getById(id);
+    @Override
+    public void save(UserRequest userRequest) throws InvocationTargetException, NoSuchMethodException,
+            IllegalAccessException, ResponseStatusException {
 
-        if (Objects.nonNull(user)) {
-            return userMapper.UserToDto(user);
+        UserJpaRepository repository = ((UserJpaRepository) getJpaRepository());
+
+        if (repository.findByEmail(userRequest.email()).isPresent()) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST,
+                    "User with following email already exists");
         }
 
-        user = userJpaRepository.findById(id).orElseThrow(EntityNotFoundException::new);
-
-        userRedisRepository.save(user, id);
-
-        return userMapper.UserToDto(user);
-    }
-
-    public List<UserDto> findAllUsers() {
-        return userJpaRepository.findAll().stream().map(userMapper::UserToDto).toList();
-    }
-
-    public UserDto saveUser(UserRequest userRequest) throws BadRequestException {
-        if (userJpaRepository.findByEmail(userRequest.email()) != null) {
-            throw new BadRequestException();
-        }
-
-        User user = userJpaRepository.save(userMapper.fromUserRequest(userRequest));
-
-        return userMapper.UserToDto(user);
-    }
-
-    public void deleteUserById(Long id) {
-        if (!userJpaRepository.existsById(id)) {
-            throw new EntityNotFoundException();
-        }
-
-        userJpaRepository.deleteById(id);
-
-        userRedisRepository.deleteById(id);
+        super.save(userRequest);
     }
 }

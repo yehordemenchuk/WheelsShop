@@ -6,8 +6,13 @@ import org.wheelsshop.entities.User;
 import org.wheelsshop.request.UserRequest;
 
 @Mapper(componentModel = "spring")
-public interface UserMapper {
-    UserDto UserToDto(User user);
+public interface UserMapper extends MapperContract<UserDto, User, UserRequest>{
+    @Override
+    UserDto toDto(User user);
 
-    User fromUserRequest(UserRequest request);
+    @Override
+    User fromRequest(UserRequest request);
+
+    @Override
+    User fromDto(UserDto userDto);
 }

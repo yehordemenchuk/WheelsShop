@@ -2,36 +2,42 @@ package org.wheelsshop.repository.redis;
 
 import lombok.Getter;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.wheelsshop.mapper.MapperContract;
 
 import java.util.*;
 
 @Getter
-public abstract class AbstractRedisRepository<T> implements RedisRepository<T> {
+public abstract class AbstractRedisRepository<D, T, R> implements RedisRepository<T, D> {
     private final RedisTemplate<String, Object> redisTemplate;
     private final String prefix;
-    private final Class<T> clazz;
+    private final Class<D> clazz;
+    private final MapperContract<D, T, R> mapper;
 
     protected AbstractRedisRepository(RedisTemplate<String, Object> redisTemplate,
-                                      String prefix, Class<T> clazz) {
+                                      String prefix, Class<D> clazz, MapperContract<D, T, R> mapper) {
         this.redisTemplate = redisTemplate;
 
         this.prefix = prefix;
 
         this.clazz = clazz;
+
+        this.mapper = mapper;
     }
 
     @Override
     public void save(T t, long id) {
-        redisTemplate.opsForValue().set(prefix + id, t);
+        System.out.println(mapper.toDto(t));
+
+        redisTemplate.opsForValue().set(prefix + id, mapper.toDto(t));
     }
 
     @Override
-    public T getById(long id) throws IllegalStateException {
+    public D getById(long id) throws IllegalStateException {
         Object obj = redisTemplate.opsForValue().get(prefix + id);
 
         if (clazz != null && clazz.isInstance(obj)) {
             return clazz.cast(obj);
-        } else if (clazz != null) {
+        } else if (clazz != null && obj != null) {
             throw new IllegalStateException();
         }
 
@@ -39,7 +45,7 @@ public abstract class AbstractRedisRepository<T> implements RedisRepository<T> {
     }
 
     @Override
-    public List<T> findAll() {
+    public List<D> findAll() {
         Set<String> keys = redisTemplate.keys(prefix + "*");
 
         if (Objects.isNull(keys) || keys.isEmpty()) {

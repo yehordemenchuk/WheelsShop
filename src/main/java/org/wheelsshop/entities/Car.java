@@ -1,9 +1,7 @@
 package org.wheelsshop.entities;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
-
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,8 +12,8 @@ import java.util.List;
 @Getter
 public class Car {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @SequenceGenerator(name="generator", sequenceName = "cars", allocationSize = 1)
+    @GeneratedValue(generator = "car_seq", strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name="car_seq", sequenceName = "car_sequence", allocationSize = 1)
     @Setter(AccessLevel.NONE)
     private Long id;
 
@@ -32,11 +30,12 @@ public class Car {
 
     @ManyToOne
     @JoinColumn(name="brand_id", nullable=false)
-    @JsonBackReference("car-brand-reference")
     private Brand brand;
 
     @ManyToOne
     @JoinColumn(name="user_id")
-    @JsonBackReference("car-user-reference")
     private User user;
+
+    @OneToMany(mappedBy = "car", cascade=CascadeType.ALL, fetch=FetchType.LAZY, orphanRemoval=true)
+    List<Order> orders = new ArrayList<>();
 }

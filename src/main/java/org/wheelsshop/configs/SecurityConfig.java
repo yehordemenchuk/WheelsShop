@@ -33,24 +33,24 @@ public class SecurityConfig {
                         session.sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED))
                 .authorizeHttpRequests(auth ->
                         auth.requestMatchers(
-                                        "/api/v1/car/save",
-                                        "/api/v1/brand/save",
-                                        "/api/v1/car/delete/**",
+                                        "/api/v1/cars/save",
+                                        "/api/v1/brands/save",
+                                        "/api/v1/cars/delete/**",
                                         "/api/v1/brand/delete/**",
-                                        "/api/v1/user/all",
-                                        "/api/v1/order/all",
-                                        "/api/v1/user/find/**"
+                                        "/api/v1/users/all",
+                                        "/api/v1/orders/all",
+                                        "/api/v1/users/find/**"
                                 ).hasRole(ADMIN_ROLE_NAME)
                                 .requestMatchers(
-                                        "/api/v1/order/save",
-                                        "/api/v1/order/find/**",
-                                        "/api/v1/order/**"
+                                        "/api/v1/orders/save",
+                                        "/api/v1/orders/find/**",
+                                        "/api/v1/orders/**"
                                 ).authenticated()
                                 .requestMatchers(
-                                        "/api/v1/user/save",
-                                        "/api/v1/user/delete/**",
-                                        "/api/v1/car/**",
-                                        "/api/v1/brand/**"
+                                        "/api/v1/users/save",
+                                        "/api/v1/users/delete/**",
+                                        "/api/v1/cars/**",
+                                        "/api/v1/brands/**"
                                 ).permitAll()
                 )
                 .addFilterBefore(loginAndPasswordFilter,

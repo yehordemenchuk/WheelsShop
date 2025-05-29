@@ -6,5 +6,5 @@ import org.wheelsshop.entities.Brand;
 
 @Repository
 public interface BrandJpaRepository extends JpaRepository<Brand, Long> {
-    Brand findByName(String name);
+    Brand findByBrandName(String brandName);
 }

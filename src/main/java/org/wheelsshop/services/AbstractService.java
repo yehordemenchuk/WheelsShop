@@ -1,7 +1,9 @@
 package org.wheelsshop.services;
 
+import lombok.Getter;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.wheelsshop.exceptions.EntityNotFoundException;
+import org.wheelsshop.mapper.MapperContract;
 import org.wheelsshop.repository.redis.RedisRepository;
 
 import java.lang.reflect.InvocationTargetException;
@@ -9,20 +11,25 @@ import java.lang.reflect.Method;
 import java.util.List;
 import java.util.Objects;
 
-public abstract class AbstractService<T> implements ServiceContract<T> {
+@Getter
+public abstract class AbstractService<D, T, R> implements ServiceContract<D, T, R> {
     private final JpaRepository<T, Long> jpaRepository;
-    private final RedisRepository<T> redisRepository;
+    private final RedisRepository<T, D> redisRepository;
     private final Class<T> entityClass;
+    private final MapperContract<D, T, R> mapper;
 
     protected AbstractService(JpaRepository<T, Long> jpaRepository,
-                              RedisRepository<T> redisRepository,
-                              Class<T> entityClass) {
+                              RedisRepository<T, D> redisRepository,
+                              Class<T> entityClass,
+                              MapperContract<D, T, R> mapper) {
 
         this.jpaRepository = jpaRepository;
 
         this.redisRepository = redisRepository;
 
         this.entityClass = entityClass;
+
+        this.mapper = mapper;
     }
 
     private Long getEntityId(T entity) throws NoSuchMethodException,
@@ -34,32 +41,36 @@ public abstract class AbstractService<T> implements ServiceContract<T> {
     }
 
     @Override
-    public void save(T t) throws InvocationTargetException, NoSuchMethodException, IllegalAccessException {
-        jpaRepository.save(t);
+    public void save(R r) throws InvocationTargetException, NoSuchMethodException, IllegalAccessException {
+        T entity = jpaRepository.save(mapper.fromRequest(r));
 
-        redisRepository.deleteById(getEntityId(t));
+        redisRepository.deleteById(getEntityId(entity));
     }
 
     @Override
-    public List<T> findAll() {
-        return jpaRepository.findAll();
+    public List<D> findAll() {
+        return jpaRepository
+                .findAll()
+                .stream()
+                .map(mapper::toDto)
+                .toList();
     }
 
     @Override
-    public T findById(long id) throws EntityNotFoundException, NoSuchMethodException,
+    public D findById(long id) throws EntityNotFoundException, NoSuchMethodException,
             InvocationTargetException, IllegalAccessException {
 
-        T entity = redisRepository.getById(id);
+        D dto = redisRepository.getById(id);
 
-        if (Objects.nonNull(entity)) {
-            return entity;
+        if (Objects.nonNull(dto)) {
+            return dto;
         }
 
-        entity = jpaRepository.findById(id).orElseThrow(EntityNotFoundException::new);
+        T entity = jpaRepository.findById(id).orElseThrow(EntityNotFoundException::new);
 
         redisRepository.save(entity, getEntityId(entity));
 
-        return entity;
+        return mapper.toDto(entity);
     }
 
     @Override

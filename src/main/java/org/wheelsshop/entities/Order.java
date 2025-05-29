@@ -1,6 +1,5 @@
 package org.wheelsshop.entities;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -15,8 +14,9 @@ import java.util.Date;
 @Table(name="orders")
 public class Order {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @SequenceGenerator(name = "generator", sequenceName = "orders", allocationSize = 1)
+    @GeneratedValue(generator = "order_seq", strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "order_seq", sequenceName = "order_sequence", allocationSize = 1)
+    @Setter(AccessLevel.NONE)
     private Long id;
 
     private Status status;
@@ -29,11 +29,9 @@ public class Order {
 
     @ManyToOne
     @JoinColumn(name="user_id", nullable=false)
-    @JsonBackReference("order-user-reference")
     private User user;
 
     @ManyToOne
     @JoinColumn(name="car_id", referencedColumnName = "id", nullable=false)
-    @JsonBackReference("order-car-reference")
     private Car car;
 }
