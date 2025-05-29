@@ -9,6 +9,8 @@ import org.wheelsshop.repository.jpa.BrandJpaRepository;
 import org.wheelsshop.repository.redis.BrandRedisRepository;
 import org.wheelsshop.request.BrandRequest;
 
+import java.lang.reflect.InvocationTargetException;
+
 @Service
 public class BrandService extends AbstractService<BrandDto, Brand, BrandRequest> {
     @Autowired
@@ -16,5 +18,17 @@ public class BrandService extends AbstractService<BrandDto, Brand, BrandRequest>
                         BrandRedisRepository brandRedisRepository,
                         BrandMapper brandMapper) {
         super(brandJpaRepository, brandRedisRepository, Brand.class, brandMapper);
+    }
+
+    @Override
+    public void save(BrandRequest request) throws InvocationTargetException,
+            NoSuchMethodException, IllegalAccessException, IllegalStateException {
+
+        if (((BrandJpaRepository) getJpaRepository())
+                .findByBrandName(request.brandName()) != null) {
+            throw new IllegalStateException("Brand name already exists");
+        }
+
+        super.save(request);
     }
 }

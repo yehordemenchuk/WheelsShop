@@ -1,9 +1,7 @@
 package org.wheelsshop.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import org.springframework.web.server.ResponseStatusException;
 import org.wheelsshop.dto.UserDto;
 import org.wheelsshop.entities.User;
 import org.wheelsshop.mapper.UserMapper;
@@ -24,13 +22,12 @@ public class UserService extends AbstractService<UserDto, User, UserRequest> {
 
     @Override
     public void save(UserRequest userRequest) throws InvocationTargetException, NoSuchMethodException,
-            IllegalAccessException, ResponseStatusException {
+            IllegalAccessException, IllegalStateException {
 
         UserJpaRepository repository = ((UserJpaRepository) getJpaRepository());
 
         if (repository.findByEmail(userRequest.email()).isPresent()) {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST,
-                    "User with following email already exists");
+            throw new IllegalStateException("User with email already exists");
         }
 
         super.save(userRequest);

@@ -1,9 +1,7 @@
 package org.wheelsshop.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import org.springframework.web.server.ResponseStatusException;
 import org.wheelsshop.dto.OrderDto;
 import org.wheelsshop.entities.Car;
 import org.wheelsshop.entities.Order;
@@ -35,7 +33,7 @@ public class OrderService extends AbstractService<OrderDto, Order, OrderRequest>
     }
 
     public String makeOrder(OrderRequest orderRequest) throws InvocationTargetException,
-            NoSuchMethodException, IllegalAccessException, ResponseStatusException {
+            NoSuchMethodException, IllegalAccessException, IllegalStateException {
         super.save(orderRequest);
 
         User user = getMapper().fromRequest(orderRequest).getUser();
@@ -44,10 +42,10 @@ public class OrderService extends AbstractService<OrderDto, Order, OrderRequest>
                 .orElseThrow(EntityNotFoundException::new);
 
         if (car.getCount() == 0)
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Car`s count is 0");
+            throw new IllegalAccessException("Shop does not have any products of this type");
 
         else if (car.getCount() - orderRequest.count() < 0)
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Car`s count is negative");
+            throw new IllegalStateException("Car`s count is negative");
 
         car.setCount(car.getCount() - 1);
 

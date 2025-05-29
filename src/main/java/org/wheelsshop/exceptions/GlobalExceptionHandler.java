@@ -6,6 +6,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
+import org.springframework.web.server.ResponseStatusException;
 
 import javax.naming.AuthenticationException;
 import java.lang.reflect.InvocationTargetException;
@@ -45,9 +46,15 @@ public class GlobalExceptionHandler {
         return handleException(e, request, HttpStatus.UNAUTHORIZED);
     }
 
-    @ExceptionHandler(UsernameNotFoundException.class)
-    public ResponseEntity<ErrorDetails> handleUsernameNotFoundException(UsernameNotFoundException e,
+    @ExceptionHandler({UsernameNotFoundException.class, IllegalStateException.class})
+    public ResponseEntity<ErrorDetails> handleUsernameNotFoundException(Exception e,
                                                                         WebRequest request) {
+        return handleException(e, request, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler()
+    public ResponseEntity<ErrorDetails> handleResponseStatusException(ResponseStatusException e,
+                                                                      WebRequest request) {
         return handleException(e, request, HttpStatus.BAD_REQUEST);
     }
 
