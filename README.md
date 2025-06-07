@@ -1,5 +1,6 @@
 # WheelsShop
 ✅ List of Completed Tasks
+  
   ✅ Project onboarding: familiarized with the backend architecture and project structure.
   
   ✅ Removed legacy integrations: excluded deprecated services such as VK and Yandex from the project.
